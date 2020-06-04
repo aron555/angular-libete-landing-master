@@ -220,6 +220,7 @@
   .screen-content {
     padding-top: 80px;
   }
+
   &-blob {
     @include blob(416px, 416px);
     top: -166px;
@@ -282,12 +283,15 @@
     height: 260px;
     object-fit: contain;
   }
+
   &-title {
     margin-bottom: 55px;
   }
+
   &-text {
     margin-top: 16px;
   }
+
   &-btn {
     margin-top: 32px;
   }
@@ -360,9 +364,11 @@
 
 .calculate {
   @include blueBlock();
+
   &-title {
     margin-bottom: 40px;
   }
+
   &-image {
     position: absolute;
     z-index: 2;
@@ -375,24 +381,31 @@
 
   &-form {
     position: relative;
+
     &-wrapper {
       @include flexColumnNowrapContentStartItemsStart();
     }
+
     &-field {
       &-short {
         width: 260px;
       }
+
       &-middle {
         width: 360px;
       }
+
       &-long {
         width: 560px;
       }
     }
+
     &-input {
     }
+
     &-file {
       @include flexRowNowrapContentBetweenItemsCenter();
+
       &:after {
         @include hoverFocus();
         content: '';
@@ -404,10 +417,12 @@
         mask-size: contain;
       }
     }
+
     &-text {
       @include textNormal();
       margin-bottom: 5px;
     }
+
     &-submit {
       margin-top: 26px;
     }
@@ -422,16 +437,19 @@
   .screen-content {
     padding-top: 40px;
   }
+
   &-first-blob {
     @include blob(688px, 497px);
     top: -216px;
     left: -200px;
   }
+
   &-second-blob {
     @include blob(623px, 685px);
     top: 630px;
     right: -260px;
   }
+
   &-third-blob {
     @include blob(347px, 347px);
     bottom: -200px;
@@ -468,6 +486,7 @@
     z-index: 2;
     position: relative;
   }
+
   &-text {
     margin-bottom: 15px;
     z-index: 2;
@@ -478,6 +497,7 @@
     @include textPromoLarge();
     margin-top: 26px;
   }
+
   &-order {
     margin-top: 30px;
   }
@@ -492,6 +512,7 @@
     &-first {
       left: -228px;
     }
+
     &-second {
       right: -220px;
     }
@@ -525,6 +546,7 @@
 .cross {
   @include widthHeightValue(30px);
   margin-left: 15px;
+
   &-opened {
     .open-close {
       transform: rotate(180deg);
@@ -591,6 +613,7 @@
   &-item {
     width: 32px;
     height: 20px;
+
     &:not(:first-child) {
       margin-top: 10px;
     }
@@ -629,9 +652,11 @@
   &-show {
     display: none;
   }
+
   &-hide {
     display: block;
   }
+
   @media screen and (max-width: 374px) {
     &-show {
       display: block;
