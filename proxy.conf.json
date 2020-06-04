@@ -1,0 +1,8 @@
+{
+  "/": {
+    "target": "http://libete.low/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

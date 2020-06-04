@@ -1,0 +1,11 @@
+@import "colors.scss";
+@import "icons.scss";
+@import "images.scss";
+@import "mixins.scss";
+
+$containerWidth: 1160px;
+$maxContainerWidth: calc(100vw - 30px);
+$headerHeight: 98px;
+$headerHeightMobile: 54px;
+$headerOutletHeight: calc(100vh - 98px);
+$headerOutletHeightMobile: calc(100vh - 54px);

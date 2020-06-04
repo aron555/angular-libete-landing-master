@@ -1,0 +1,16 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.0715 0L41.16 18.6362L60 25.1397L45.8506 40.0922L45.1883 60L27.2932 51.2729L8.10663 56.405L11.133 36.7265L0 19.3227L19.7033 16.5556L32.0715 0Z" fill="#333333"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="54" height="54">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.7254 20.2566L56.4156 26.0181L43.8772 39.2681L43.2923 56.8501L27.4986 49.1477L10.5493 53.6814L13.2249 36.2847L3.36426 20.8699L20.8071 18.4202L31.7116 3.82397L39.7254 20.2566Z" fill="#00C158"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M0 0H15V60H0V0Z" fill="white"/>
+<path d="M-5 40L10 25L13 28L11 30M23 50L10.5 37.5L23 25M-5 35L10 50L13 47L11 45M7 15L10 20L13 15" stroke="#C9303F" stroke-width="2"/>
+<path d="M13 22.5L14 21L15 22.5L14 24L13 22.5Z" stroke="#C9303F"/>
+<path d="M5 22.5L6 21L7 22.5L6 24L5 22.5Z" stroke="#C9303F"/>
+<path d="M13 52.5L14 51L15 52.5L14 54L13 52.5Z" stroke="#C9303F"/>
+<path d="M5 52.5L6 51L7 52.5L6 54L5 52.5Z" stroke="#C9303F"/>
+<path d="M15 40H60V60H15V40Z" fill="#49A657"/>
+<path d="M15 0H60V40H15V0Z" fill="#C9303F"/>
+</g>
+</svg>

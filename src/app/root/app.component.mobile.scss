@@ -1,0 +1,743 @@
+@import "../../assets/style-guides/index";
+
+@media screen and (max-width: 1160px) {
+  .screen {
+    min-height: 0;
+  }
+
+  .first-screen {
+    &-blob {
+      @include blob(675.5px, 487.5px);
+      top: 56px;
+      right: -275px;
+    }
+  }
+
+  .header {
+    @include width100HeightValue($headerHeightMobile);
+    padding-top: 13px;
+
+    &-logo {
+      width: 96px;
+      height: 25px;
+    }
+
+    &-phone {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 15px;
+    }
+
+    &-mail {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  ::ng-deep .mat-expansion-indicator {
+    zoom: 0.8;
+    margin-top: -3px;
+  }
+  ::ng-deep .mat-expansion-panel-header {
+    max-height: 30px;
+    max-width: 250px;
+  }
+
+  .content {
+    &-first {
+      padding-top: 33px;
+
+      &-start {
+        padding-top: 33px;
+        width: 50%;
+      }
+    }
+  }
+
+  .panel {
+    width: fit-content;
+    margin-bottom: 35px;
+    overflow: visible;
+
+    &-header {
+      border-bottom: 1px dashed $black;
+      padding: 0 0 1px 0;
+
+      .mat-expansion-indicator {
+        margin-left: 50px;
+      }
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &-content {
+      &-list {
+        padding: 12px 0;
+
+        &-half {
+          width: 50%;
+
+          &:first-child {
+            width: 150px;
+          }
+        }
+
+        li {
+          @include textNormalMobile();
+          max-width: 340px;
+          &:not(:first-child) {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    &-promo {
+      margin-top: 9px;
+      @include textPromoMobile();
+    }
+
+    &-order {
+      margin-top: 10px;
+      @include orangeButtonMobile();
+    }
+  }
+
+  .image-first {
+    width: 280px;
+    height: 426px;
+    object-fit: contain;
+  }
+
+  .title {
+    @include textTitleMobile();
+    max-width: 460px;
+  }
+
+  .text {
+    @include textNormalMobile();
+  }
+
+  .text-promo {
+    @include textPromoMobile();
+  }
+
+  .orange-button {
+    @include orangeButtonMobile();
+  }
+
+  .second-screen {
+    .screen-content {
+      padding-top: 80px;
+    }
+    &-blob {
+      @include blob(312px, 312px);
+      top: -88px;
+      left: -106px;
+    }
+  }
+
+  .flags {
+    padding-top: 13px;
+  }
+
+  .flag {
+    margin-top: 25px;
+    min-width: 160px;
+
+    &-text {
+      @include textPromoMobile();
+      margin-top: 5px;
+    }
+  }
+
+  .third-screen {
+    &-blob {
+      @include blob(320px, 352px);
+      top: -200px;
+      right: -320px;
+    }
+  }
+
+  .test-promo {
+    padding: 80px 170px;
+
+    &-image {
+      right: 335px;
+      top: -125px;
+      width: 220px;
+      height: 160px;
+    }
+    &-title {
+      margin: 0 0 38px;
+    }
+    &-text {
+      margin-top: 12px;
+    }
+    &-btn {
+      margin-top: 25px;
+    }
+  }
+
+  .fourth-screen {
+    .screen-content {
+      padding-top: 82px;
+    }
+
+    &-blob {
+      @include blob(326px, 287px);
+      top: 100px;
+      left: 0;
+    }
+  }
+
+  .advantages {
+    margin-top: 63px;
+
+    &-block {
+      height: auto;
+      min-height: 140px;
+
+      &-text {
+        width: 50%;
+        color: $white;
+      }
+      &-image {
+        bottom: 10px;
+        width: auto;
+        height: 140px;
+      }
+
+      &:first-child {
+        .advantages-block-image {
+          width: 330px;
+          height: 186px;
+        }
+      }
+    }
+  }
+
+  .fifth-screen {
+    .screen-content {
+      padding-top: 50px;
+    }
+
+    &-blob {
+      @include blob(328px, 312px);
+      top: -100px;
+      right: 0;
+    }
+  }
+
+  .calculate {
+    &-title {
+      margin-bottom: 40px;
+    }
+    &-image {
+      position: absolute;
+      z-index: 2;
+      top: 170px;
+      right: 160px;
+      width: 60px;
+      height: 240px;
+    }
+
+    &-form {
+      @include textPromoMobile();
+
+      &-field {
+        &-short {
+          width: 160px;
+        }
+        &-middle {
+          width: 220px;
+        }
+        &-long {
+          width: 340px;
+        }
+      }
+      &-text {
+        @include textNormalMobile();
+        width: 400px;
+      }
+      &-submit {
+        margin-top: 22px;
+      }
+    }
+  }
+
+  ::ng-deep .mat-form-field .mat-form-field-infix {
+    border-top: none;
+  }
+
+  .sixth-screen {
+    .screen-content {
+      padding-top: 82px;
+    }
+    &-first-blob {
+      @include blob(353.45px, 253.5px);
+      top: -50px;
+      left: -16px;
+    }
+    &-second-blob {
+      @include blob(320px, 351.97px);
+      top: 514px;
+      right: -10px;
+    }
+    &-third-blob {
+      @include blob(312px, 312px);
+      bottom: -216px;
+      left: -156px;
+    }
+  }
+
+  .clients {
+    @include flexRowWrapContentStartItemsStart();
+    padding: 38px 0 72px;
+
+    &-item {
+      width: 25%;
+      height: 65px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .about {
+    max-width: 460px;
+
+    &-title {
+      margin-bottom: 38px;
+    }
+    &-text {
+      @include textPromoMobile();
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &-promo {
+      @include textPromo();
+      font-weight: bold;
+      margin-top: 3px;
+    }
+    &-order {
+      margin-top: 22px;
+    }
+
+    &-image {
+      &-first {
+        top: -10px;
+        left: -146px;
+        width: 170px;
+        height: 238px;
+      }
+      &-second {
+        right: -130px;
+        top: 30px;
+        width: 180px;
+        height: 252px;
+      }
+    }
+  }
+
+  .footer {
+    @include width100HeightContent();
+    position: relative;
+    z-index: 1;
+    margin-top: 110px;
+    border-top: 1px solid $gray;
+    padding: 18px 0 0;
+
+    &-content {
+      @include width100HeightContent();
+      @include flexRowNowrapContentBetweenItemsCenter();
+    }
+
+    &-image {
+      right: -40px;
+      top: -28px;
+      width: 48px;
+      height: 60px;
+    }
+  }
+
+  .cross {
+    zoom: 0.5;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .first-screen {
+    &-blob {
+      @include blob(472.25px, 341.25px);
+      top: 104px;
+      left: 164px;
+    }
+  }
+
+  .header {
+    @include width100HeightValue($headerHeightMobile);
+    padding-top: 13px;
+
+    &-logo {
+      width: 96px;
+      height: 29px;
+    }
+  }
+
+  .content {
+    &-first {
+      padding-top: 27px;
+
+      &-start {
+        padding-top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  ::ng-deep .mat-expansion-panel-header {
+    max-height: 20px;
+    max-width: 290px;
+  }
+  ::ng-deep .mat-expanded .mat-expansion-panel-header {
+    max-height: 25px;
+  }
+
+  .panel {
+    margin: 25px 0 35px;
+    &-title {
+      line-height: 1;
+    }
+
+    &-content {
+      &-list {
+        li {
+          &:before {
+            content: '–';
+            width: 15px;
+            left: -15px;
+          }
+        }
+      }
+    }
+  }
+
+  .mat-expanded .panel-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .image-first {
+    display: none;
+  }
+
+  .second-screen {
+    .screen-content {
+      padding-top: 135px;
+    }
+    &-blob {
+      @include blob(225.33, 226.2px);
+      top: 10px;
+      right: 50%;
+    }
+  }
+
+  .flags {
+    @include flexRowWrapContentCenterItemsStart();
+    padding-top: 23px;
+  }
+
+  .flag {
+    margin: 25px 0 0 0;
+    width: 50%;
+    min-width: 0;
+
+    &-text {
+      @include textPromoMobile();
+      margin-top: 5px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+    }
+  }
+
+  .third-screen {
+    .screen-content {
+      padding-top: 160px;
+    }
+
+    &-blob {
+      @include blob(231.11px, 254.2px);
+      top: -200px;
+      right: -320px;
+    }
+  }
+
+  .test-promo {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    padding: 82px 30px 90px;
+    border-radius: 0;
+
+    &-image {
+      left: calc(50% - 95px);
+      top: -85px;
+      width: 190px;
+      height: 137px;
+    }
+    &-title {
+      margin: 0 0 46px;
+    }
+    &-text {
+      font-weight: 500;
+    }
+  }
+
+  .fourth-screen {
+    &-blob {
+      @include blob(242.63px, 213.7px);
+      top: 592px;
+      left: -90px;
+    }
+  }
+
+  .advantages {
+    &-block {
+      width: 100%;
+      padding: 13px 20px;
+      &-text {
+        width: 190px;
+        color: $white;
+      }
+      &-image {
+        bottom: 10px;
+        width: auto;
+        height: 140px;
+      }
+
+      &:nth-child(2n) {
+        @include flexRowNowrapContentStartItemsCenter();
+        .advantages-block-image {
+          right: 10px;
+        }
+      }
+      &:nth-child(2n+1) {
+        @include flexRowNowrapContentEndItemsCenter();
+        .advantages-block-image {
+          left: 10px;
+          transform: scale(-1, 1);
+        }
+      }
+      &:nth-child(10n + 3) {
+        padding-left: 60px;
+      }
+      &:first-child {
+        padding-top: 113px;
+        .advantages-block-text {
+          width: 100%;
+        }
+        .advantages-block-image {
+          transform: none;
+          top: -40px;
+          width: 240px;
+          height: 135.4px;
+        }
+      }
+    }
+  }
+
+  .fifth-screen {
+    .screen-content {
+      padding-top: 50px;
+    }
+
+    &-blob {
+      @include blob(236.89px, 225.33px);
+      top: -118px;
+      left: 50%;
+    }
+  }
+
+  .calculate {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    padding: 82px 30px 90px;
+    border-radius: 0;
+
+    &-title {
+      margin-bottom: 40px;
+    }
+    &-image {
+      display: none;
+    }
+
+    &-form {
+      @include textPromoMobile();
+      &-field {
+        &-short {
+          width: calc(100% - 70px);
+        }
+        &-middle {
+          width: calc(100% - 25px);
+        }
+        &-long {
+          width: 100%;
+        }
+      }
+      &-text {
+        width: 100%;
+      }
+      &-submit {
+        margin-top: 27px;
+      }
+    }
+  }
+
+  .sixth-screen {
+    .title {
+      text-align: center;
+    }
+
+    .screen-content {
+      padding-top: 82px;
+    }
+    &-first-blob {
+      @include blob(255.27px, 184.27px);
+      top: -50px;
+      right: 50%;
+    }
+    &-second-blob {
+      @include blob(231.11px, 254.2px);
+      top: 900px;
+      left: 50%;
+    }
+    &-third-blob {
+      @include blob(225.33px, 225.23px);
+      bottom: -215px;
+      right: 50%;
+    }
+  }
+
+  .clients {
+    @include flexRowWrapContentStartItemsStart();
+    padding: 53px 0 87px;
+
+    &-item {
+      width: 50%;
+      height: auto;
+      margin-bottom: 0;
+
+      &:nth-child(7n) {
+        object-fit: cover;
+        overflow: visible;
+        padding-top: 6px;
+      }
+    }
+  }
+
+  .about {
+    max-width: 260px;
+
+    &-title {
+      margin-bottom: 58px;
+    }
+    &-text {
+      &-1 {
+        margin-bottom: 215px;
+      }
+    }
+
+    &-promo {
+      @include textPromo();
+      font-weight: bold;
+      margin-top: 3px;
+    }
+    &-order {
+      margin-top: 22px;
+    }
+
+    &-image {
+      &-first {
+        top: 390px;
+        left: auto;
+        right: 50%;
+        width: 140px;
+        height: 196px;
+      }
+      &-second {
+        top: 390px;
+        left: 50%;
+        right: auto;
+        width: 140px;
+        height: 196px;
+      }
+    }
+  }
+
+  .footer {
+    @include width100HeightContent();
+    position: relative;
+    z-index: 1;
+    margin-top: 110px;
+    border-top: 1px solid $gray;
+    padding: 18px 0 0;
+
+    &-content {
+      @include width100HeightContent();
+      @include flexRowNowrapContentBetweenItemsCenter();
+    }
+
+    &-image {
+      right: -40px;
+      top: -28px;
+      width: 48px;
+      height: 60px;
+    }
+  }
+
+  .lang {
+    width: 52px;
+    height: 20px;
+    margin-right: 10px;
+
+    &-container {
+      @include flexColumnNowrapContentStartItemsCenter();
+      width: 32px;
+      height: 20px;
+
+      &-opened {
+        height: 150px;
+      }
+    }
+
+    &-item {
+      width: 32px;
+      height: 20px;
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &-arrow {
+      @include widthHeightValue(20px);
+      &:after {
+        @include widthHeightValue(14px);
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .header-row:not(:first-child) {
+    padding-top: 10px;
+  }
+}

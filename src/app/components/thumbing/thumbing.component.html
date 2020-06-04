@@ -1,0 +1,4 @@
+<button *ngFor="let thumb of thumbs; let idx = index"
+        [class.thumb-active]="idx === activeThumbIndex"
+        (click)="onThumb(idx)"
+        class="thumb"></button>

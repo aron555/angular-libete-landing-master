@@ -1,0 +1,372 @@
+@import 'colors.scss';
+@import 'icons.scss';
+
+@mixin widthHeight100() {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin width100HeightContent() {
+  width: 100%;
+  height: fit-content;
+}
+
+@mixin widthContentHeight100() {
+  width: fit-content;
+  height: 100%;
+}
+
+@mixin widthHeightValue($value) {
+  width: $value;
+  height: $value;
+}
+
+@mixin width100HeightValue($value) {
+  width: 100%;
+  height: $value;
+}
+
+@mixin widthHeightContent() {
+  width: fit-content;
+  height: fit-content;
+}
+
+@mixin maxWidthHeightInherit() {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@mixin flexRowWrap() {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin flexRowNoWrap() {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@mixin flexColumnWrap() {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@mixin flexColumnNoWrap() {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@mixin flexRowNowrapContentCenterItemsStart() {
+  @include flexRowNoWrap();
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flexRowNowrapContentStartItemsStart() {
+  @include flexRowNoWrap();
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flexRowNowrapContentStartItemsStart() {
+  @include flexRowNoWrap();
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flexRowNowrapContentEndItemsStart() {
+  @include flexRowNoWrap();
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@mixin flexRowNowrapContentStartItemsCenter() {
+  @include flexRowNoWrap();
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flexRowNowrapContentCenterItemsCenter() {
+  @include flexRowNoWrap();
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRowNowrapContentEndItemsCenter() {
+  @include flexRowNoWrap();
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flexRowNowrapContentBetweenItemsCenter() {
+  @include flexRowNoWrap();
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexRowWrapContentBetweenItemsStart() {
+  @include flexRowWrap();
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@mixin flexRowWrapContentStartItemsStart() {
+  @include flexRowWrap();
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@mixin flexRowWrapContentBetweenItemsStretch() {
+  @include flexRowWrap();
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+@mixin flexRowWrapContentBetweenItemsEnd() {
+  @include flexRowWrap();
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flexRowNowrapContentBetweenItemsStart() {
+  @include flexRowNoWrap();
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flexRowNowrapContentBetweenItemsEnd() {
+  @include flexRowNoWrap();
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flexColumnNowrapContentStartItemsCenter() {
+  @include flexColumnNoWrap();
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flexColumnNowrapContentStartItemsStart() {
+  @include flexColumnNoWrap();
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flexColumnNowrapContentEndItemsEnd() {
+  @include flexColumnNoWrap();
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@mixin flexColumnNowrapContentEndItemsStart() {
+  @include flexColumnNoWrap();
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@mixin flexColumnWrapContentStartItemsCenter() {
+  @include flexColumnWrap();
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flexColumnNoWrapContentCenterItemsCenter() {
+  @include flexColumnNoWrap();
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRowWrapContentBetweenItemsCenter() {
+  @include flexRowWrap();
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexRowWrapContentCenterItemsCenter() {
+  @include flexRowWrap();
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRowWrapContentCenterItemsStart() {
+  @include flexRowWrap();
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flexRowWrapContentStretchItemsCenter() {
+  @include flexRowWrap();
+  justify-content: stretch;
+  align-items: center;
+}
+
+@mixin textPromo {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $black;
+}
+
+@mixin textPromoMobile {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+@mixin textPromoLarge {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: $black;
+}
+
+@mixin textNormal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+}
+
+@mixin textNormalMobile {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: $black;
+}
+
+@mixin textTitle {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: $black;
+}
+
+@mixin textTitleMobile {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: $black;
+}
+
+@mixin hoverFocus($color: $orange) {
+  background: $color;
+
+  &:focus {
+    background: darken($color, 5%);
+  }
+  &:hover {
+    background: darken($color, 10%);
+  }
+  &:active {
+    background: darken($color, 15%);
+  }
+}
+
+@mixin textHoverFocus($color: $orange) {
+  color: $color;
+
+  &:focus {
+    color: darken($color, 5%);
+  }
+  &:hover {
+    color: darken($color, 10%);
+  }
+  &:active {
+    color: darken($color, 15%);
+  }
+}
+
+@mixin afterHoverFocus($color: $orange) {
+  &:after {
+    background: $color;
+  }
+
+  &:focus {
+    &:after {
+      background: darken($color, 5%);
+    }
+  }
+  &:hover {
+    &:after {
+      background: darken($color, 10%);
+    }
+  }
+  &:active {
+    &:after {
+      background: darken($color, 15%);
+    }
+  }
+}
+
+@mixin orangeButton() {
+  @include textPromo();
+  @include hoverFocus();
+  color: $white;
+  padding: 13px 30px;
+  border-radius: 10px;
+}
+
+@mixin orangeButtonMobile() {
+  @include textPromoMobile();
+  @include hoverFocus();
+  color: $white;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+@mixin blob($width, $height) {
+  position: absolute;
+  z-index: 0;
+
+  &-image {
+    width: $width;
+    height: $height;
+  }
+}
+
+@mixin blueBlock() {
+  @include width100HeightContent();
+  position: relative;
+  overflow: visible;
+  background: linear-gradient(207.23deg, #EDFCFF 0%, #D9EFFF 100%);
+  box-shadow: 0 20px 40px rgba(32, 53, 64, 0.05);
+  border-radius: 30px;
+  padding: 130px 200px;
+}
+
+@mixin scrollbar($color: $middleGreen) {
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 7px;
+
+    &-track {
+      background: transparent;
+    }
+
+    &-thumb {
+      background: $color;
+      border-radius: 7px;
+
+      &:hover {
+        background: darken($color, 10%);
+      }
+    }
+  }
+}
+
+@mixin orangeHover() {
+  background: transparent;
+  &:focus {
+    background: rgba(255, 156, 0, 0.05);
+  }
+  &:hover {
+    background: rgba(255, 156, 0, 0.1);
+  }
+  &:active {
+    background: rgba(255, 156, 0, 0.15);
+  }
+}

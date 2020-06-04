@@ -1,0 +1,136 @@
+@import "../../../assets/style-guides/index";
+
+:host {
+  @include widthHeight100();
+  @include flexRowWrapContentCenterItemsCenter();
+  overflow: hidden;
+  @media screen and (max-width: 800px) {
+    overflow-y: auto;
+  }
+}
+
+::ng-deep .mat-dialog-container {
+  padding: 0;
+}
+
+.modal {
+  width: 760px;
+  max-width: 100%;
+  position: relative;
+  overflow: visible;
+  @media screen and (max-width: 420px) {
+    min-height: 100%;
+    overflow: hidden;
+  }
+  &-content {
+    @include widthHeight100();
+    position: relative;
+    z-index: 10;
+    @media screen and (max-width: 800px) {
+      padding: 30px;
+    }
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    @media screen and (max-width: 800px) {
+      @include textTitleMobile();
+    }
+  }
+  &-close {
+    @include widthHeightValue(30px);
+    @include flexRowWrapContentCenterItemsCenter();
+    @include afterHoverFocus();
+    position: absolute;
+    z-index: 20;
+    right: -70px;
+    top: 10px;
+    padding: 0;
+    &:after {
+      @include widthHeightValue(22px);
+      content: '';
+      display: block;
+      mask: url($iconCloseModal) no-repeat center;
+      mask-size: contain;
+    }
+
+    @media screen and (max-width: 800px) {
+      right: 10px;
+    }
+  }
+  &-blob {
+    position: absolute;
+    z-index: 0;
+  }
+  &-blob-first {
+    width: 433.33px;
+    height: 432.9px;
+    top: -286px;
+    left: -386px;
+    @media screen and (max-width: 800px) {
+      left: -186px;
+    }
+  }
+  &-blob-second {
+    width: 622.22px;
+    height: 684.39px;
+    right: -381px;
+    bottom: -472px;
+  }
+}
+
+.pale {
+  opacity: 0.5;
+}
+
+.orange {
+  color: $orange;
+}
+
+.orange-button {
+  @include orangeButton();
+}
+
+.translate-form {
+  margin-top: 60px;
+  position: relative;
+  &-wrapper {
+    @include flexColumnNowrapContentStartItemsStart();
+  }
+  &-field {
+    &-short {
+      width: 260px;
+    }
+    &-middle {
+      width: 360px;
+    }
+    &-long {
+      width: 560px;
+    }
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+    }
+  }
+  &-input {
+  }
+  &-file {
+    @include flexRowNowrapContentBetweenItemsCenter();
+    &:after {
+      @include hoverFocus();
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      mask: url($iconClip) center no-repeat;
+      mask-size: contain;
+    }
+  }
+  &-text {
+    @include textNormal();
+    margin-bottom: 5px;
+  }
+  &-submit {
+    margin-top: 26px;
+  }
+}
