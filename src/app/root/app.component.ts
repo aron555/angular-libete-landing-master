@@ -7,6 +7,7 @@ import {environment} from '../../environments/environment';
 import {TestTranslateModalComponent} from '../modals/test-translate-modal/test-translate-modal.component';
 import {MatDialog} from '@angular/material/dialog';
 import {ActivatedRoute} from '@angular/router';
+import {Title, Meta} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -60,6 +61,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   content = CONTENT[LANGUAGE.EN];
   languages = [];
   languageFlags = LANGUAGE_FLAGS;
+  languageTitles =  LANGUAGE_TITLE;
   isLangsOpen = false;
 
   constructor(
@@ -67,6 +69,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     private http: HttpClient,
     private dialog: MatDialog,
     private route: ActivatedRoute,
+    private titleService: Title,
+    private metaTagService: Meta,
   ) {
     this.initFormGroup();
     this.languages = Object.values(LANGUAGE);
@@ -84,6 +88,10 @@ export class AppComponent implements OnInit, AfterViewInit {
       }
     });
   }
+
+    public setTitle( newTitle: string) {
+        this.titleService.setTitle( newTitle );
+    }
 
   initFormGroup() {
   }
@@ -227,6 +235,14 @@ export enum LANGUAGE_FLAGS {
   FR = 'flag-fra.svg',
   DE = 'flag-ger.svg',
   IT = 'flag-ita.svg',
+}
+
+export enum LANGUAGE_TITLE {
+    RU = 'Бюро переводов Libete',
+    EN = 'Libete Translation Agency',
+    FR = 'Libete Translation Agency',
+    DE = 'Libete Translation Agency',
+    IT = 'Libete Translation Agency',
 }
 
 export interface Item {
@@ -426,7 +442,7 @@ const CONTENT: Content = {
       {
         title: 'Notarized Translation',
         items: [
-          `Translation certified by the notary’s signature and seal in compliance 
+          `Translation certified by the notary’s signature and seal in compliance
             with the Russian legislation and official regulations adopted by other countries.`,
         ],
         promo: 'Rate: from $8.5/document'
@@ -484,11 +500,11 @@ const CONTENT: Content = {
     clientsTitle: 'Our Customers',
     aboutTitle: 'Company Profile',
     aboutTexts: [
-      `Today, Libete is a leading-edge and innovative translation company that can provide the best solution for the most 
-      complex tasks. Leverage our professional in situ interpreting,
+      `Today, Libete is a leading-edge and innovative translation company that can provide the best solution for the most
+       complex tasks. Leverage our professional in situ interpreting,
        document certification, automated website localization, and other capabilities. There is nothing we can't handle.`,
       `A large team of professionals and innovative techniques enable us to handle several tasks at a time,
-        thereby reducing our customers' time efforts and costs.`,
+        thereby reducing our customers' time, efforts and costs.`,
       `To make sure the process is fast and transparent for us and the customer, we employ dedicated management software
         ensuring end-to-end workflow control.`,
       `Advanced solutions turn routine tasks into automated processes, while our translators, editors, and reviewers

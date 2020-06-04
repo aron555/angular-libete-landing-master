@@ -2,7 +2,7 @@
 // пятно для первого экрана
 
 $(function () {
-  console.log('blobs works');
+  /*console.log('blobs works');*/
   try {
     var firstblobname = Snap('body');
     firstblob = firstblobname.select('.firstblob path');
@@ -67,7 +67,7 @@ $(function () {
 
 function firstbloboneAnimation() {
   try {
-    console.log({blobone});
+    //console.log({blobone});
     blobone.animate({'path': bloboneConfig.to}, speed, secondbloboneAnimation);
   } catch (e) {
     console.error({e})

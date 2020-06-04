@@ -4,7 +4,7 @@ import {FileValidator} from 'ngx-material-file-input';
 import {environment} from '../../../environments/environment';
 import {HttpClient} from '@angular/common/http';
 import {MAT_DIALOG_DATA} from '@angular/material/dialog';
-import {Content} from '../../root/app.component';
+import {Content, LANGUAGE} from '../../root/app.component';
 
 @Component({
   selector: 'app-test-translate-modal',
@@ -30,6 +30,9 @@ export class TestTranslateModalComponent implements OnInit {
   sendFormSuccessImage = '/assets/images/send-form-success.svg';
   sendFormErrorImage = '/assets/images/send-form-error.svg';
 
+  activeLang = LANGUAGE.EN;
+  languageEnum = LANGUAGE;
+
   constructor(
     private http: HttpClient,
     @Inject(MAT_DIALOG_DATA) public content: Content,
@@ -37,7 +40,7 @@ export class TestTranslateModalComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.content);
+    /*console.log(this.content);*/
   }
 
   submitForm() {

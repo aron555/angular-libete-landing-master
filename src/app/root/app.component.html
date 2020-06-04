@@ -26,7 +26,7 @@
         <header (clickOutside)="toggleLang(false)"
                 class="header">
           <div class="header-row">
-            <img [src]="(activeLang === languageEnum.RU) ? logoImage : logoImageEn" class="header-logo">
+            <img [src]="(activeLang === languageEnum.RU) ? logoImage : logoImageEn" class="header-logo" alt="logo libete">
             <div class="row-end">
               <div class="small-mobile-hide">
                 <ng-container *ngTemplateOutlet="lang"></ng-container>
@@ -300,8 +300,8 @@
                class="clients-item">
         </div>
         <div class="about">
-          <img [src]="aboutImages[0]" class="about-image about-image-first">
-          <img [src]="aboutImages[1]" class="about-image about-image-second">
+          <img [src]="aboutImages[0]" class="about-image about-image-first" alt="about libete">
+          <img [src]="aboutImages[1]" class="about-image about-image-second" alt="about libete">
           <h2 class="title about-title">{{content?.aboutTitle}}</h2>
           <p *ngFor="let aboutText of content?.aboutTexts; let idx = index" class="text-promo about-text about-text-{{idx}}">{{aboutText}}</p>
           <h4 class="about-promo">{{content?.aboutPromo}}</h4>
@@ -341,12 +341,12 @@
   <div [class.hidden-instant-opacity]="!sendFormPending"
        class="pending-logo">
     <img [src]="pendingLogoLetterImage"
-         class="pending-logo-letter">
+         class="pending-logo-letter" alt="file">
     <img [src]="pendingLogoRotationImage"
-         class="pending-logo-rotation">
+         class="pending-logo-rotation" alt="rotation">
   </div>
   <div [class.hidden-instant-opacity]="!sendFormSuccess" class="sent">
-    <img [src]="sendFormSuccessImage" class="sent-image">
+    <img [src]="sendFormSuccessImage" class="sent-image" alt="sent ok">
     <h3 class="sent-title sent-title-success">{{content?.sentSuccessTitle}}</h3>
     <p class="sent-message">{{content?.sentSuccessText1}}</p>
     <p class="sent-message">{{content?.sentSuccessText2}}</p>
@@ -362,14 +362,14 @@
 </ng-template>
 
 <ng-template #lang>
-  <div class="lang">
+  <div class="lang" (click)="toggleLang()">
     <div [class.lang-container-opened]="isLangsOpen"
          class="lang-container">
       <a *ngFor="let lang of languages"
-         (click)="toggleLang()"
          [routerLink]="'/' + lang"
+         (click)="setTitle(languageTitles[lang])"
          class="lang-item">
-        <img [src]="imageLangsPath + languageFlags[lang]" class="lang-item-image">
+        <img [src]="imageLangsPath + languageFlags[lang]" class="lang-item-image" alt="language flag">
       </a>
     </div>
     <button [class.lang-arrow-revert]="isLangsOpen"

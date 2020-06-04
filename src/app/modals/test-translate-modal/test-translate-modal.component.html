@@ -39,9 +39,10 @@
         </mat-form-field>
         <p class="translate-form-text pale">*{{content?.formText1}}</p>
         <p class="translate-form-text">{{content?.formText2}}
-          <a href="https://libete.ru/poleznie-statii/98-privacy-policy"
-             target="_blank"
-             class="orange">{{content?.formPrivacy}}</a>
+            <a [href]="(activeLang === languageEnum.RU) ? 'https://libete.ru/poleznie-statii/98-privacy-policy' : 'https://libete.ru/poleznaya-informatsiya/244-privacy-policy'"
+               target="_blank"
+               class="orange">{{content?.formPrivacy}}</a>
+
         </p>
         <button [disabled]="translateForm.invalid"
                 class="orange-button translate-form-submit">{{content?.formSubmit}}

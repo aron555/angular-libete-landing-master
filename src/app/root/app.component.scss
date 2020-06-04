@@ -465,9 +465,13 @@
 
   &-title {
     margin-bottom: 55px;
+    z-index: 2;
+    position: relative;
   }
   &-text {
     margin-bottom: 15px;
+    z-index: 2;
+    position: relative;
   }
 
   &-promo {
