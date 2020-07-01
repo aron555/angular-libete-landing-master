@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular-libete-landing app is running!');
+    expect(page.getTitleText()).toEqual('order-translation-into-russian app is running!');
   });
 
   afterEach(async () => {

@@ -21,14 +21,13 @@ export class TestTranslateModalComponent implements OnInit {
   });
   acceptFileTypes = `image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,
   application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`;
-
   sendFormPending = false;
   sendFormSuccess = false;
   sendFormError = false;
-  pendingLogoLetterImage = '/assets/images/logo-letter.svg';
-  pendingLogoRotationImage = '/assets/images/logo-rotation.svg';
-  sendFormSuccessImage = '/assets/images/send-form-success.svg';
-  sendFormErrorImage = '/assets/images/send-form-error.svg';
+  pendingLogoLetterImage = './assets/images/logo-letter.svg';
+  pendingLogoRotationImage = './assets/images/logo-rotation.svg';
+  sendFormSuccessImage = './assets/images/send-form-success.svg';
+  sendFormErrorImage = './assets/images/send-form-error.svg';
 
   activeLang = LANGUAGE.EN;
   languageEnum = LANGUAGE;

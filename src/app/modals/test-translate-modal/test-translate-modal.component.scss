@@ -47,13 +47,13 @@
     right: -70px;
     top: 10px;
     padding: 0;
-    &:after {
+    /*&:after {
       @include widthHeightValue(22px);
       content: '';
       display: block;
       mask: url($iconCloseModal) no-repeat center;
       mask-size: contain;
-    }
+    }*/
 
     @media screen and (max-width: 800px) {
       right: 10px;
@@ -114,7 +114,7 @@
   }
   &-input {
   }
-  &-file {
+  /*&-file {
     @include flexRowNowrapContentBetweenItemsCenter();
     &:after {
       @include hoverFocus();
@@ -125,7 +125,7 @@
       mask: url($iconClip) center no-repeat;
       mask-size: contain;
     }
-  }
+  }*/
   &-text {
     @include textNormal();
     margin-bottom: 5px;
@@ -133,4 +133,9 @@
   &-submit {
     margin-top: 26px;
   }
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
 }

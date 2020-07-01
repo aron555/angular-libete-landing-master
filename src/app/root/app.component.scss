@@ -403,7 +403,7 @@
     &-input {
     }
 
-    &-file {
+    /*&-file {
       @include flexRowNowrapContentBetweenItemsCenter();
 
       &:after {
@@ -413,10 +413,12 @@
         width: 18px;
         height: 18px;
         //background: $orange;
-        mask: url($iconClip) center no-repeat;
+        mask: url('/assets/icons/clip.svg') center no-repeat;
         mask-size: contain;
       }
     }
+
+     */
 
     &-text {
       @include textNormal();
@@ -626,19 +628,19 @@
 
   &-arrow {
     @include widthHeightValue(20px);
-    @include flexRowWrapContentCenterItemsCenter();
+    @include flexColumnNoWrapContentCenterItemsCenter();
     position: absolute;
     right: 0;
     top: 0;
 
-    &:after {
+    /*&:after {
       @include widthHeightValue(14px);
       content: '';
       display: block;
       background: url($iconLangArrow) no-repeat center;
       background-size: contain;
       transition: all 0.25s ease;
-    }
+    }*/
 
     &-revert {
       &:after {

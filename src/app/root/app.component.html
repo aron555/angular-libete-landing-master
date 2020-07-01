@@ -251,7 +251,7 @@
                                                     [multiple]="true"
                                                     [accept]="acceptFileTypes"
                                                     class="calculate-form-input calculate-form-file"
-                                ></ngx-mat-file-input>
+                                ><img class="absolute-right" src="assets/icons/clip.svg" style="position: absolute;right: 0;"></ngx-mat-file-input>
                             </mat-form-field>
                             <mat-form-field class="calculate-form-field calculate-form-field-long">
                                 <mat-label>{{content?.formComment}}</mat-label>
@@ -423,6 +423,6 @@
             </a>
         </div>
         <button [class.lang-arrow-revert]="isLangsOpen"
-                class="lang-arrow"></button>
+                class="lang-arrow"><img src="assets/icons/lang-arrow.svg" class="lang-arrow-img"></button>
     </div>
 </ng-template>

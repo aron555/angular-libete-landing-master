@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-libete-landing'`, () => {
+  it(`should have as title 'order-translation-into-russian'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-libete-landing');
+    expect(app.title).toEqual('order-translation-into-russian');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-libete-landing app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('order-translation-into-russian app is running!');
   });
 });

@@ -30,6 +30,7 @@
                               [accept]="acceptFileTypes"
                               class="translate-form-input translate-form-file">
           </ngx-mat-file-input>
+            <img src="/assets/icons/clip.svg" class="absolute-right">
         </mat-form-field>
         <mat-form-field class="translate-form-field translate-form-field-long">
           <mat-label>{{content?.formComment}}</mat-label>
@@ -50,7 +51,7 @@
       </div>
     </form>
   </div>
-  <button mat-dialog-close class="modal-close"></button>
+  <button mat-dialog-close class="modal-close"><img src="assets/icons/close-modal.svg" class="modal-close-icon"></button>
   <svg class="modal-blob modal-blob-first blobonerev" width="450" viewBox="0 0 450 400" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M420 247.323C420 340 335 395 255 395C156.5 395 30 316.5 30 216C30 104.5 128 5 222 5C316 5 420 150.5 420 247.323Z" fill="url(#blobonerevgradient)"/>
     <defs>

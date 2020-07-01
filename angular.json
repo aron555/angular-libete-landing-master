@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-libete-landing": {
+    "order-translation-into-russian": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/translation.libete.ru",
+            "outputPath": "dist/order-translation-into-russian",
             "index": "src/index.html",
             "baseHref": "/",
             "main": "src/main.ts",
@@ -50,6 +50,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "baseHref": "/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -77,19 +78,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-libete-landing:build",
+            "browserTarget": "order-translation-into-russian:build",
             "baseHref": "/"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-libete-landing:build:production"
+              "browserTarget": "order-translation-into-russian:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-libete-landing:build"
+            "browserTarget": "order-translation-into-russian:build"
           }
         },
         "test": {
@@ -135,11 +136,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-libete-landing:serve"
+            "devServerTarget": "order-translation-into-russian:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-libete-landing:serve:production"
+              "devServerTarget": "order-translation-into-russian:serve:production"
             }
           }
         },
@@ -167,23 +168,23 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "angular-libete-landing:build",
-            "serverTarget": "angular-libete-landing:server"
+            "browserTarget": "order-translation-into-russian:build",
+            "serverTarget": "order-translation-into-russian:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-libete-landing:build:production",
-              "serverTarget": "angular-libete-landing:server:production"
+              "browserTarget": "order-translation-into-russian:build:production",
+              "serverTarget": "order-translation-into-russian:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "angular-libete-landing:build:production",
-            "serverTarget": "angular-libete-landing:server:production",
+            "browserTarget": "order-translation-into-russian:build:production",
+            "serverTarget": "order-translation-into-russian:server:production",
             "routes": [
-              "/",
+              "/"
             ]
           },
           "configurations": {
@@ -193,7 +194,7 @@
       }
     }
   },
-  "defaultProject": "angular-libete-landing",
+  "defaultProject": "order-translation-into-russian",
   "cli": {
     "analytics": "2b9be9aa-8650-4051-a019-b30458b16b22"
   }

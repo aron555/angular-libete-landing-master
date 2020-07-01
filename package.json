@@ -1,5 +1,5 @@
 {
-  "name": "angular-libete-landing",
+  "name": "order-translation-into-russian",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,11 +9,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run angular-libete-landing:serve-ssr",
+    "dev:ssr": "ng run order-translation-into-russian:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
-    "build:ssr": "ng build --prod && ng run angular-libete-landing:server:production",
-    "prerender": "ng run angular-libete-landing:prerender",
-    "rebuild": "ng build --prod && ng run angular-libete-landing:prerender"
+    "build:ssr": "ng build --prod && ng run order-translation-into-russian:server:production",
+    "prerender": "ng run order-translation-into-russian:prerender",
+    "rebuild": "ng build --prod && ng run order-translation-into-russian:prerender"
   },
   "private": true,
   "dependencies": {
@@ -29,12 +29,15 @@
     "@angular/platform-server": "~9.0.0",
     "@angular/router": "~9.0.0",
     "@nguniversal/express-engine": "^9.1.0",
+    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/http-loader": "^5.0.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "express": "^4.15.2",
     "jade": "^1.11.0",
     "material-design-icons": "^3.0.1",
     "ng-click-outside": "^6.0.0",
     "ngx-material-file-input": "^2.1.1",
+    "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

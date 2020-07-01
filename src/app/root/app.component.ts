@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, PLATFORM_ID, Inject} from '@angular/core';
 import {ScrollToService} from '@nicky-lenaers/ngx-scroll-to';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {FileValidator} from 'ngx-material-file-input';
@@ -8,6 +8,7 @@ import {TestTranslateModalComponent} from '../modals/test-translate-modal/test-t
 import {MatDialog} from '@angular/material/dialog';
 import {ActivatedRoute} from '@angular/router';
 import {Title, Meta} from '@angular/platform-browser';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
     selector: 'app-root',
@@ -31,30 +32,29 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
     acceptFileTypes = `image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,
   application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`;
-
-    imageFlagsPath = 'assets/flags/';
-    imageLangsPath = 'assets/langs/';
-    imageAdvantagesPath = 'assets/advantages/';
-    imageClientsPath = 'assets/clients/';
+    imageFlagsPath = './assets/flags/';
+    imageLangsPath = './assets/langs/';
+    imageAdvantagesPath = './assets/advantages/';
+    imageClientsPath = './assets/clients/';
     clients = CLIENTS;
     expandingIndexes = {};
     aboutImages = [
-        '../assets/images/about-1.svg',
-        '../assets/images/about-2.svg',
-        '../assets/images/about-3.svg',
+        './assets/images/about-1.svg',
+        './assets/images/about-2.svg',
+        './assets/images/about-3.svg',
     ];
-    logoImage = '../assets/images/logo.svg';
-    logoImageEn = '../assets/images/logo-en.svg';
-    firstImage = '../assets/images/image-first.svg';
-    thirdImage = '../assets/images/image-third.svg';
+    logoImage = './assets/images/logo.svg';
+    logoImageEn = './assets/images/logo-en.svg';
+    firstImage = './assets/images/image-first.svg';
+    thirdImage = './assets/images/image-third.svg';
 
     sendFormPending = false;
     sendFormSuccess = false;
     sendFormError = false;
-    pendingLogoLetterImage = '/assets/images/logo-letter.svg';
-    pendingLogoRotationImage = '/assets/images/logo-rotation.svg';
-    sendFormSuccessImage = '/assets/images/send-form-success.svg';
-    sendFormErrorImage = '/assets/images/send-form-error.svg';
+    pendingLogoLetterImage = './assets/images/logo-letter.svg';
+    pendingLogoRotationImage = './assets/images/logo-rotation.svg';
+    sendFormSuccessImage = './assets/images/send-form-success.svg';
+    sendFormErrorImage = './assets/images/send-form-error.svg';
 
     activeLang = LANGUAGE.EN;
     languageEnum = LANGUAGE;
@@ -72,6 +72,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         private route: ActivatedRoute,
         private titleService: Title,
         private metaTagService: Meta,
+        @Inject(PLATFORM_ID) private platformId: object,
     ) {
         this.initFormGroup();
         this.languages = Object.values(LANGUAGE);
@@ -176,13 +177,15 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     private setSectionPositions() {
         SECTION_CLASSES.map(sectionClass => {
-            if (!document) {
+            /*if (!document) {
                 return;
-            }
-            const section = document.getElementsByClassName(sectionClass)[0] as HTMLElement;
-            if (section) {
-                this.sectionClasses.push(sectionClass);
-                this.sectionPositions.push(section.offsetTop);
+            }*/
+            if (isPlatformBrowser(this.platformId)) {
+                const section = document.getElementsByClassName(sectionClass)[0] as HTMLElement;
+                if (section) {
+                    this.sectionClasses.push(sectionClass);
+                    this.sectionPositions.push(section.offsetTop);
+                }
             }
         });
     }
