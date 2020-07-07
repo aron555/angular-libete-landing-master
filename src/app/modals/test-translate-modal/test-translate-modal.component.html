@@ -30,7 +30,7 @@
                               [accept]="acceptFileTypes"
                               class="translate-form-input translate-form-file">
           </ngx-mat-file-input>
-            <img src="/assets/icons/clip.svg" class="absolute-right">
+            <img src="assets/icons/clip.svg" class="absolute-right">
         </mat-form-field>
         <mat-form-field class="translate-form-field translate-form-field-long">
           <mat-label>{{content?.formComment}}</mat-label>
@@ -46,7 +46,7 @@
 
         </p>
         <button [disabled]="translateForm.invalid"
-                class="orange-button translate-form-submit">{{content?.formSubmit}}
+                class="orange-button translate-form-submit" onclick="Comagic.addOfflineRequest({name: $('[formcontrolname = name]').val(),email: $('[formcontrolname = email]').val(),phone: $('[formcontrolname = phone]').val(),message: $('[formcontrolname = comment]').val()});">{{content?.formSubmit}}
         </button>
       </div>
     </form>

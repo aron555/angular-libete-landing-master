@@ -232,34 +232,34 @@ export class AppComponent implements OnInit, AfterViewInit {
 export enum LANGUAGE {
     EN = 'EN',
     RU = 'RU',
-    FR = 'FR',
+    /*FR = 'FR',
     DE = 'DE',
-    IT = 'IT',
+    IT = 'IT',*/
 }
 
 export enum LANGUAGE_FLAGS {
     RU = 'flag-rus.png',
     EN = 'flag-eng.svg',
-    FR = 'flag-fra.svg',
+    /*FR = 'flag-fra.svg',
     DE = 'flag-ger.svg',
-    IT = 'flag-ita.svg',
+    IT = 'flag-ita.svg',*/
 }
 
 export enum LANGUAGE_TITLE {
     RU = 'Бюро переводов Libete',
     EN = 'Libete Translation Agency',
-    FR = 'Libete Translation Agency',
+    /*FR = 'Libete Translation Agency',
     DE = 'Libete Translation Agency',
-    IT = 'Libete Translation Agency',
+    IT = 'Libete Translation Agency',*/
 }
 
 export enum LANGUAGE_META {
     RU = 'Бюро переводов Libete. Либете предлагает недорогие и срочные услуги переводческого агентства онлайн' +
         ' в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов',
     EN = 'Libete Translation Agency',
-    FR = 'Libete Translation Agency',
+    /*FR = 'Libete Translation Agency',
     DE = 'Libete Translation Agency',
-    IT = 'Libete Translation Agency',
+    IT = 'Libete Translation Agency',*/
 }
 
 export interface Item {
