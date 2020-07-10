@@ -145,12 +145,11 @@
             </div>
             <section class="screen-content">
                 <div class="test-promo">
-                    <img [src]="thirdImage" alt="{{content?.testFree0 + content?.testTitle + content?.testFree}}"
+                    <img [src]="thirdImage" alt="{{content?.testFree0 + content?.testTitle}}"
                          class="test-promo-image">
                     <h2 class="title test-promo-title">
                         <span class="orange">{{content?.testFree0}}</span>
                         {{content?.testTitle}}
-                        <span class="orange">{{content?.testFree}}</span>
                     </h2>
                     <p class="text-promo test-promo-text">{{content?.testText1}}</p>
                     <p class="text-promo test-promo-text">{{content?.testText2}}</p>
@@ -251,7 +250,9 @@
                                                     [multiple]="true"
                                                     [accept]="acceptFileTypes"
                                                     class="calculate-form-input calculate-form-file"
-                                ><img class="absolute-right" src="assets/icons/clip.svg" style="position: absolute;right: 0;"></ngx-mat-file-input>
+                                >
+                                </ngx-mat-file-input>
+                                <img class="absolute-right" src="assets/icons/clip.svg" style="position: absolute;right: 0;">
                             </mat-form-field>
                             <mat-form-field class="calculate-form-field calculate-form-field-long">
                                 <mat-label>{{content?.formComment}}</mat-label>
@@ -265,7 +266,7 @@
                                    target="_blank"
                                    class="orange">{{content?.formPrivacy}}</a>
                             </p>
-                            <button [disabled]="calculateForm.invalid"
+                            <button [disabled]="calculateForm.invalid" onclick="Comagic.addOfflineRequest({name: $('[formcontrolname = name]').val(),email: $('[formcontrolname = email]').val(),phone: $('[formcontrolname = phone]').val(),message: $('[formcontrolname = comment]').val()});"
                                     class="orange-button calculate-form-submit">{{content?.formSubmit}}
                             </button>
                         </div>
