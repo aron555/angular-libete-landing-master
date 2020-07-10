@@ -1,10 +1,9 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {FileValidator} from 'ngx-material-file-input';
 import {environment} from '../../../environments/environment';
 import {HttpClient} from '@angular/common/http';
-import {MAT_DIALOG_DATA} from '@angular/material/dialog';
-import {Content, LANGUAGE} from '../../root/app.component';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-test-translate-modal',
@@ -34,8 +33,9 @@ export class TestTranslateModalComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    @Inject(MAT_DIALOG_DATA) public content: Content,
+    private translate: TranslateService
   ) {
+      translate.setDefaultLang('en');
   }
 
   ngOnInit(): void {
@@ -78,4 +78,9 @@ export class TestTranslateModalComponent implements OnInit {
     this.sendFormError = false;
     this.submitForm();
   }
+}
+
+enum LANGUAGE {
+    EN = 'EN',
+    RU = 'RU'
 }

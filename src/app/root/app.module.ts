@@ -10,13 +10,13 @@ import {ThumbingModule} from '../components/thumbing/thumbing.module';
 import {ScrollToModule} from '@nicky-lenaers/ngx-scroll-to';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MaterialFileInputModule} from 'ngx-material-file-input';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TestTranslateModalModule} from '../modals/test-translate-modal/test-translate-modal.module';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ClickOutsideModule} from 'ng-click-outside';
 // import ngx-translate and the http loader
-/*import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';*/
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 
 @Component({
@@ -49,14 +49,13 @@ const routes: Routes = [
         RouterModule.forRoot(routes),
         ClickOutsideModule,
         // ngx-translate and the loader module
-        /*HttpClientModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
                 useFactory: HttpLoaderFactory,
                 deps: [HttpClient]
             }
-        }),*/
+        }),
     ],
     declarations: [
         RootRouterComponent,
@@ -69,6 +68,6 @@ export class AppModule {
 }
 
 // required for AOT compilation
-/*export function HttpLoaderFactory(http: HttpClient) {
+export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
-}*/
+}

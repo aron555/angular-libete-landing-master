@@ -1,6 +1,6 @@
 <div class="modal">
   <div class="modal-content">
-    <h2 class="modal-title">{{content?.modalTitle}}</h2>
+    <h2 class="modal-title">{{'modalTitle' | translate}}</h2>
     <form (submit)="submitForm()"
           [formGroup]="translateForm"
           class="translate-form">
@@ -8,45 +8,45 @@
       <div [class.pending-opacity]="sendFormPending || sendFormSuccess || sendFormError"
            class="translate-form-wrapper">
         <mat-form-field class="translate-form-field translate-form-field-middle">
-          <mat-label>*{{content?.formName}}</mat-label>
+          <mat-label>*{{'formName' | translate}}</mat-label>
           <input #firstInput
                  formControlName="name"
                  type="text" matInput class="translate-form-input">
         </mat-form-field>
         <mat-form-field class="translate-form-field translate-form-field-short">
-          <mat-label>{{content?.formPhone}}</mat-label>
+          <mat-label>{{'formPhone' | translate}}</mat-label>
           <input formControlName="phone"
                  type="tel" matInput class="translate-form-input">
         </mat-form-field>
         <mat-form-field class="translate-form-field translate-form-field-long">
-          <mat-label>*{{content?.formMail}}</mat-label>
+          <mat-label>*{{'formMail' | translate}}</mat-label>
           <input formControlName="email"
                  type="email" matInput class="translate-form-input">
         </mat-form-field>
         <mat-form-field class="translate-form-field translate-form-field-middle">
-          <mat-label>{{content?.formFile}}</mat-label>
+          <mat-label>{{'formFile' | translate}}</mat-label>
           <ngx-mat-file-input [formControlName]="'file'"
                               [multiple]="true"
                               [accept]="acceptFileTypes"
                               class="translate-form-input translate-form-file">
           </ngx-mat-file-input>
-            <img src="assets/icons/clip.svg" class="absolute-right">
+            <img class="absolute-right" src="assets/icons/clip.svg" style="position: absolute;right: 0;">
         </mat-form-field>
         <mat-form-field class="translate-form-field translate-form-field-long">
-          <mat-label>{{content?.formComment}}</mat-label>
+          <mat-label>{{'formComment' | translate}}</mat-label>
           <textarea formControlName="comment"
                     type="text" matInput
                     class="translate-form-input"></textarea>
         </mat-form-field>
-        <p class="translate-form-text pale">*{{content?.formText1}}</p>
-        <p class="translate-form-text">{{content?.formText2}}
+        <p class="translate-form-text pale">*{{'formText1' | translate}}</p>
+        <p class="translate-form-text">{{'formText2' | translate}}
             <a [href]="(activeLang === languageEnum.RU) ? 'https://libete.ru/poleznie-statii/98-privacy-policy' : 'https://libete.ru/poleznaya-informatsiya/244-privacy-policy'"
                target="_blank"
-               class="orange">{{content?.formPrivacy}}</a>
+               class="orange">{{'formPrivacy' | translate}}</a>
 
         </p>
         <button [disabled]="translateForm.invalid"
-                class="orange-button translate-form-submit" onclick="Comagic.addOfflineRequest({name: $('[formcontrolname = name]').val(),email: $('[formcontrolname = email]').val(),phone: $('[formcontrolname = phone]').val(),message: $('[formcontrolname = comment]').val()});">{{content?.formSubmit}}
+                class="orange-button translate-form-submit" onclick="Comagic.addOfflineRequest({name: $('[formcontrolname = name]').val(),email: $('[formcontrolname = email]').val(),phone: $('[formcontrolname = phone]').val(),message: $('[formcontrolname = comment]').val()});">{{'formSubmit' | translate}}
         </button>
       </div>
     </form>
@@ -94,17 +94,17 @@
   </div>
   <div [class.hidden-instant-opacity]="!sendFormSuccess" class="sent">
     <img [src]="sendFormSuccessImage" class="sent-image">
-    <h3 class="sent-title sent-title-success">{{content?.sentSuccessTitle}}</h3>
-    <p class="sent-message">{{content?.sentSuccessText1}}</p>
-    <p class="sent-message">{{content?.sentSuccessText2}}</p>
-    <a (click)="onMoreRequest()" class="sent-link">{{content?.sentSuccessButton}}</a>
+    <h3 class="sent-title sent-title-success">{{'sentSuccessTitle' | translate}}</h3>
+    <p class="sent-message">{{'sentSuccessText1' | translate}}</p>
+    <p class="sent-message">{{'sentSuccessText2' | translate}}</p>
+    <a (click)="onMoreRequest()" class="sent-link">{{'sentSuccessButton' | translate}}</a>
   </div>
   <div [class.hidden-instant-opacity]="!sendFormError" class="sent">
     <img [src]="sendFormErrorImage" alt="" class="sent-image">
-    <h3 class="sent-title sent-title-error">{{content?.sentErrorTitle}}</h3>
-    <p class="sent-message">{{content?.sentErrorText1}}</p>
-    <p class="sent-message">{{content?.sentErrorText2}}</p>
-    <a (click)="onRepeatSending()" class="sent-link">{{content?.sentErrorButton}}</a>
+    <h3 class="sent-title sent-title-error">{{'sentErrorTitle' | translate}}</h3>
+    <p class="sent-message">{{'sentErrorText1' | translate}}</p>
+    <p class="sent-message">{{'sentErrorText2' | translate}}</p>
+    <a (click)="onRepeatSending()" class="sent-link">{{'sentErrorButton' | translate}}</a>
   </div>
 </ng-template>
 

@@ -1,0 +1,139 @@
+{
+  "mainTranslations": [
+    {
+      "title": "Translation Services",
+      "items": [
+        "Legal Translation",
+        "Technical Translation",
+        "Medical Translation"
+      ],
+      "itemsSecond": [
+        "Marketing Translation",
+        "Scientific Translation",
+        "Journalistic Translation"
+      ],
+      "promo": "Rate: from $0.02/word"
+    },
+    {
+      "title": "Interpreting Services",
+      "items": [
+        "Consecutive and simultaneous interpreting at exhibitions, negotiation sessions, training sessions, and conferences",
+        "Online interpreting (remote interpreter)",
+        "Individual support and work with groups",
+        "Interpreting at private or public events",
+        "Voiced translation for media",
+        "Simultaneous interpreting equipment rental"
+      ],
+      "promo": "Rate: from $35/hour"
+    },
+    {
+      "title": "Website & Software Localization",
+      "items": [
+        "UI and content translation",
+        "Adapting translations to cultural specifics of the target audience",
+        "Adapting translations to technical specifics",
+        "Handling specific file types",
+        "Translation of associated documentation"
+      ],
+      "promo": "Rate: from $0.02/word"
+    },
+    {
+      "title": "Notarized Translation",
+      "items": [
+        "Translation certified by the notary’s signature and seal in compliance with the Russian legislation and official regulations adopted by other countries."
+      ],
+      "promo": "Rate: from $8.5/document"
+    }
+  ],
+  "mainTranslationButton": "Order Translation",
+  "flagsTitle": "CIS and Baltic states languages we translate:",
+  "flags": [
+    {"image": "star-flag-1.svg", "text": "Russian"},
+    {"image": "star-flag-7.svg", "text": "Ukrainian"},
+    {"image": "star-flag-15.svg", "text": "Belarusian"},
+    {"image": "star-flag-4.svg", "text": "Kazakh"},
+    {"image": "star-flag-9.svg", "text": "Azerbaijani"},
+    {"image": "star-flag-8.svg", "text": "Armenian"},
+    {"image": "star-flag-3.svg", "text": "Georgian"},
+    {"image": "star-flag-2.svg", "text": "Moldavian"},
+    {"image": "star-flag-11.svg", "text": "Kyrgyz"},
+    {"image": "star-flag-5.svg", "text": "Tadjik"},
+    {"image": "star-flag-6.svg", "text": "Turkmen"},
+    {"image": "star-flag-10.svg", "text": "Uzbek"},
+    {"image": "star-flag-13.svg", "text": "Latvian"},
+    {"image": "star-flag-12.svg", "text": "Lithuanian"},
+    {"image": "star-flag-14.svg", "text": "Estonian"}
+  ],
+  "testFree0": "Free",
+  "testTitle": " test translation",
+  "testText1": "Assess our swiftness and quality!",
+  "testText2": "We will provide you several test translations made by different translators so you can choose the one that you like most.",
+  "testButton": "Order Test Translation",
+  "advantagesTitle": "Why order translation from Libete",
+  "advantages": [
+    {
+      "image": "advantage-1.svg",
+      "text": "Personal manager provides end-to-end order support. Cutting-edge project management, quality assurance, text & speech recognition software"
+    },
+    {
+      "image": "advantage-2.svg",
+      "text": "Qualified native-speaker translators and editors"
+    },
+    {
+      "image": "advantage-3.svg",
+      "text": "  ISO 9001:2015 and ISO 17100:2015 compliance"
+    },
+    {
+      "image": "advantage-4.svg",
+      "text": "Term bases and domain-specific dictionaries"
+    },
+    {
+      "image": "advantage-5.svg",
+      "text": "Fast and reliable worldwide delivery"
+    },
+    {
+      "image": "advantage-6.svg",
+      "text": "Libete is a member of the Chamber of Commerce and Industry of the Russian Federation"
+    },
+    {
+      "image": "advantage-7.svg",
+      "text": "Urgent translations (order-to-text from 1 day)"
+    }
+  ],
+  "formTitle": "Get free quote",
+  "formName": "Name",
+  "formPhone": "Phone",
+  "formMail": "E-mail",
+  "formFile": "Attach File",
+  "formComment": "Comment",
+  "formText1": "Required",
+  "formText2": "By submitting this form, I give my consent to processing of my personal data as per the",
+  "formPrivacy": "Privacy Policy",
+  "formSubmit": "Send free quote request",
+  "clientsTitle": "Our Customers",
+  "aboutTitle": "Company Profile",
+  "aboutTexts": [
+    "Today, Libete is a leading-edge and innovative translation company that can provide the best solution for the most complex tasks. Leverage our professional in situ interpreting, document certification, automated website localization, and other capabilities. There is nothing we can't handle.",
+  "A large team of professionals and innovative techniques enable us to handle several tasks at a time, thereby reducing our customers' time, efforts and costs.",
+  "To make sure the process is fast and transparent for us and the customer, we employ dedicated management software ensuring end-to-end workflow control.",
+  "Advanced solutions turn routine tasks into automated processes, while our translators, editors, and reviewers collaborate in one online space, exchanging relevant experience and findings.",
+  "For specialized projects, we involve native speakers having competences in specific fields.",
+  "We provide world-class translations with quality confirmed by our satisfied customers from major European businesses."
+  ],
+  "aboutPromo": "Request a test translation to assess our capabilities.",
+  "aboutOrder": "Request a test translation",
+  "footerTitle": "Libete Translation Agency",
+  "sentSuccessTitle": "Sent!",
+  "sentSuccessText1": "Thank you for your request!",
+  "sentSuccessText2": "We will contact you shortly",
+  "sentSuccessButton": "One more request",
+  "sentErrorTitle": "Error",
+  "sentErrorText1": "Sorry, an error occurred while submitting the form",
+  "sentErrorText2": "Try again later",
+  "sentErrorButton": "Send again",
+  "modalTitle": "Request a test translation",
+  "logoImage": "./assets/images/logo-en.svg",
+  "languageFlag": "flag-rus.png",
+  "languageTitle": "Libete Translation Agency",
+  "languageMeta": "Libete Translation Agency"
+}

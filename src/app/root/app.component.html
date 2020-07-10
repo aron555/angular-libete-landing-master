@@ -28,10 +28,9 @@
                 </svg>
             </div>
             <section class="screen-content">
-                <header (clickOutside)="toggleLang(false)"
-                        class="header">
+                <header class="header">
                     <div class="header-row">
-                        <img [src]="(activeLang === languageEnum.RU) ? logoImage : logoImageEn" class="header-logo"
+                        <img [src]="'logoImage'|translate" class="header-logo"
                              alt="logo libete">
                         <div class="row-end">
                             <div class="small-mobile-hide">
@@ -53,7 +52,7 @@
                     <div class="content-fit content-first-start">
                         <mat-accordion>
                             <mat-expansion-panel
-                                    *ngFor="let mainTranslation of content?.mainTranslations; let idx = index"
+                                    *ngFor="let mainTranslation of ('mainTranslations' | translate); let idx = index"
                                     (opened)="expandedRemove(idx); expandedOpen(idx)"
                                     (closed)="expandedStart(idx); expandedClose()"
                                     (afterCollapse)="expandedStop(idx)"
@@ -65,26 +64,26 @@
                                 <div class="panel-wrapper"
                                      [class.hidden-opacity]="isInExpanded(idx)">
                                     <div class="panel-content">
-                                        <ul [class.panel-content-list-half]="mainTranslation?.itemsSecond"
+                                        <ul [class.panel-content-list-half]="mainTranslation.itemsSecond"
                                             class="panel-content-list">
-                                            <li *ngFor="let item of mainTranslation?.items">{{item}}</li>
+                                            <li *ngFor="let item of mainTranslation.items">{{item}}</li>
                                         </ul>
-                                        <ul *ngIf="mainTranslation?.itemsSecond"
+                                        <ul *ngIf="mainTranslation.itemsSecond"
                                             class="panel-content-list panel-content-list-half">
-                                            <li *ngFor="let item of mainTranslation?.itemsSecond">{{item}}</li>
+                                            <li *ngFor="let itemSecond of mainTranslation.itemsSecond">{{itemSecond}}</li>
                                         </ul>
                                     </div>
                                     <div class="panel-footer">
-                                        <h4 class="panel-promo">{{mainTranslation?.promo}}</h4>
+                                        <h4 class="panel-promo">{{mainTranslation.promo}}</h4>
                                         <button (click)="moveToOrderForm()"
-                                                class="panel-order">{{content.mainTranslationButton}}</button>
+                                                class="panel-order">{{'mainTranslationButton' | translate}}</button>
                                     </div>
                                 </div>
                             </mat-expansion-panel>
                         </mat-accordion>
                     </div>
                     <div class="content-fit content-first-end">
-                        <img [src]="firstImage" class="image-first">
+                        <img [src]="firstImage" class="image-first" alt="translation agency">
                     </div>
                 </main>
             </section>
@@ -112,10 +111,10 @@
                 </svg>
             </div>
             <section class="screen-content">
-                <h2 class="title">{{content?.flagsTitle}}</h2>
+                <h2 class="title">{{'flagsTitle' | translate}}</h2>
                 <div class="flags">
-                    <div *ngFor="let flag of content?.flags" class="flag">
-                        <img [src]="imageFlagsPath + flag?.image" [alt]="flag.text" class="flag-image">
+                    <div *ngFor="let flag of ('flags' | translate)" class="flag">
+                        <img [src]="imageFlagsPath + flag.image" [alt]="flag.text" class="flag-image">
                         <p class="flag-text" [innerHTML]="flag.text"></p>
                     </div>
                 </div>
@@ -145,17 +144,16 @@
             </div>
             <section class="screen-content">
                 <div class="test-promo">
-                    <img [src]="thirdImage" alt="{{content?.testFree0 + content?.testTitle + content?.testFree}}"
+                    <img [src]="thirdImage" alt="{{'testFree0' | translate}} {{'testTitle' | translate}}"
                          class="test-promo-image">
                     <h2 class="title test-promo-title">
-                        <span class="orange">{{content?.testFree0}}</span>
-                        {{content?.testTitle}}
-                        <span class="orange">{{content?.testFree}}</span>
+                        <span class="orange">{{'testFree0' | translate}}</span>
+                        {{'testTitle' | translate}}
                     </h2>
-                    <p class="text-promo test-promo-text">{{content?.testText1}}</p>
-                    <p class="text-promo test-promo-text">{{content?.testText2}}</p>
+                    <p class="text-promo test-promo-text">{{'testText1' | translate}}</p>
+                    <p class="text-promo test-promo-text">{{'testText2' | translate}}</p>
                     <button (click)="showTestTranslateModal()"
-                            class="orange-button test-promo-btn">{{content?.testButton}}</button>
+                            class="orange-button test-promo-btn">{{'testButton' | translate}}</button>
                 </div>
             </section>
         </section>
@@ -183,9 +181,9 @@
                 </svg>
             </div>
             <section class="screen-content">
-                <h2 class="title fourth-screen-title">{{content?.advantagesTitle}}</h2>
+                <h2 class="title fourth-screen-title">{{'advantagesTitle' | translate}}</h2>
                 <div class="advantages">
-                    <div *ngFor="let advantage of content?.advantages" class="advantages-block">
+                    <div *ngFor="let advantage of ('advantages' | translate)" class="advantages-block">
                         <p class="text-promo advantages-block-text">{{advantage.text}}</p>
                         <img [src]="imageAdvantagesPath+advantage.image" [alt]="advantage.text"
                              class="advantages-block-image">
@@ -219,61 +217,14 @@
             </div>
             <section class="screen-content">
                 <div class="calculate">
-                    <h3 class="title calculate-title">{{content?.formTitle}}</h3>
-                    <img [src]="imageAdvantagesPath + content?.advantages[1]?.image"
+                    <h3 class="title calculate-title">{{'formTitle' | translate}}</h3>
+                    <img src="./assets/advantages/advantage-2.svg"
                          alt="Расчитать стоимость перевода"
                          class="calculate-image">
-                    <form (submit)="submitForm()"
-                          [formGroup]="calculateForm"
-                          class="calculate-form">
-                        <ng-container *ngTemplateOutlet="sendFormStatuses"></ng-container>
-                        <div [class.pending-opacity]="sendFormPending || sendFormSuccess || sendFormError"
-                             class="calculate-form-wrapper">
-                            <mat-form-field class="calculate-form-field calculate-form-field-middle">
-                                <mat-label>*{{content?.formName}}</mat-label>
-                                <input #firstInput
-                                       formControlName="name"
-                                       type="text" matInput class="calculate-form-input">
-                            </mat-form-field>
-                            <mat-form-field class="calculate-form-field calculate-form-field-short">
-                                <mat-label>{{content?.formPhone}}</mat-label>
-                                <input formControlName="phone"
-                                       type="tel" matInput class="calculate-form-input">
-                            </mat-form-field>
-                            <mat-form-field class="calculate-form-field calculate-form-field-long">
-                                <mat-label>*{{content?.formMail}}</mat-label>
-                                <input formControlName="email"
-                                       type="email" matInput class="calculate-form-input">
-                            </mat-form-field>
-                            <mat-form-field class="calculate-form-field calculate-form-field-middle">
-                                <mat-label>{{content?.formFile}}</mat-label>
-                                <ngx-mat-file-input [formControlName]="'file'"
-                                                    [multiple]="true"
-                                                    [accept]="acceptFileTypes"
-                                                    class="calculate-form-input calculate-form-file"
-                                ><img class="absolute-right" src="assets/icons/clip.svg" style="position: absolute;right: 0;"></ngx-mat-file-input>
-                            </mat-form-field>
-                            <mat-form-field class="calculate-form-field calculate-form-field-long">
-                                <mat-label>{{content?.formComment}}</mat-label>
-                                <textarea formControlName="comment"
-                                          type="text" matInput
-                                          class="calculate-form-input"></textarea>
-                            </mat-form-field>
-                            <p class="calculate-form-text pale">*{{content?.formText1}}</p>
-                            <p class="calculate-form-text">{{content?.formText2}}
-                                <a [href]="(activeLang === languageEnum.RU) ? 'https://libete.ru/poleznie-statii/98-privacy-policy' : 'https://libete.ru/poleznaya-informatsiya/244-privacy-policy'"
-                                   target="_blank"
-                                   class="orange">{{content?.formPrivacy}}</a>
-                            </p>
-                            <button [disabled]="calculateForm.invalid"
-                                    class="orange-button calculate-form-submit">{{content?.formSubmit}}
-                            </button>
-                        </div>
-                    </form>
+                    <ng-container *ngTemplateOutlet="testTranlate"></ng-container>
                 </div>
             </section>
         </section>
-
 
         <section class="screen sixth-screen">
             <div class="sixth-screen-first-blob">
@@ -341,7 +292,7 @@
                 </svg>
             </div>
             <section class="screen-content">
-                <h2 class="title">{{content?.clientsTitle}}</h2>
+                <h2 class="title">{{'clientsTitle' | translate}}</h2>
                 <div class="clients">
                     <img *ngFor="let client of clients"
                          [src]="imageClientsPath + client.image" [alt]="client.text"
@@ -350,12 +301,12 @@
                 <div class="about">
                     <img [src]="aboutImages[0]" class="about-image about-image-first" alt="about libete">
                     <img [src]="aboutImages[1]" class="about-image about-image-second" alt="about libete">
-                    <h2 class="title about-title">{{content?.aboutTitle}}</h2>
-                    <p *ngFor="let aboutText of content?.aboutTexts; let idx = index"
+                    <h2 class="title about-title">{{'aboutTitle' | translate}}</h2>
+                    <p *ngFor="let aboutText of ('aboutTexts' | translate); let idx = index"
                        class="text-promo about-text about-text-{{idx}}">{{aboutText}}</p>
-                    <h4 class="about-promo">{{content?.aboutPromo}}</h4>
+                    <h4 class="about-promo">{{'aboutPromo' | translate}}</h4>
                     <button (click)="showTestTranslateModal()"
-                            class="orange-button about-order">{{content?.aboutOrder}}</button>
+                            class="orange-button about-order">{{'aboutOrder' | translate}}</button>
                 </div>
             </section>
         </section>
@@ -365,7 +316,7 @@
                  alt="© 2020 Бюро переводов «Либете»"
                  class="footer-image">
             <div class="footer-content">
-                <p class="text pale footer-content-text">© 2020 {{content?.footerTitle}}</p>
+                <p class="text pale footer-content-text">© 2020 {{'footerTitle' | translate}}</p>
                 <p class="text pale footer-content-text">
                     <a href="https://libete.ru/" class="footer-content-text-link">libete.ru</a>
                 </p>
@@ -397,27 +348,81 @@
     </div>
     <div [class.hidden-instant-opacity]="!sendFormSuccess" class="sent">
         <img [src]="sendFormSuccessImage" class="sent-image" alt="sent ok">
-        <h3 class="sent-title sent-title-success">{{content?.sentSuccessTitle}}</h3>
-        <p class="sent-message">{{content?.sentSuccessText1}}</p>
-        <p class="sent-message">{{content?.sentSuccessText2}}</p>
-        <a (click)="onMoreRequest()" class="sent-link">{{content?.sentSuccessButton}}</a>
+        <h3 class="sent-title sent-title-success">{{'sentSuccessTitle' | translate}}</h3>
+        <p class="sent-message">{{'sentSuccessText1' | translate}}</p>
+        <p class="sent-message">{{'sentSuccessText2' | translate}}</p>
+        <a (click)="onMoreRequest()" class="sent-link">{{'sentSuccessButton' | translate}}</a>
     </div>
     <div [class.hidden-instant-opacity]="!sendFormError" class="sent">
         <img [src]="sendFormErrorImage" alt="" class="sent-image">
-        <h3 class="sent-title sent-title-error">{{content?.sentErrorTitle}}</h3>
-        <p class="sent-message">{{content?.sentErrorText1}}</p>
-        <p class="sent-message">{{content?.sentErrorText2}}</p>
-        <a (click)="onRepeatSending()" class="sent-link">{{content?.sentErrorButton}}</a>
+        <h3 class="sent-title sent-title-error">{{'sentErrorTitle' | translate}}</h3>
+        <p class="sent-message">{{'sentErrorText1' | translate}}</p>
+        <p class="sent-message">{{'sentErrorText2' | translate}}</p>
+        <a (click)="onRepeatSending()" class="sent-link">{{'sentErrorButton' | translate}}</a>
     </div>
 </ng-template>
 
+<ng-template #testTranlate>
+<form (submit)="submitForm()"
+      [formGroup]="calculateForm"
+      class="calculate-form">
+    <ng-container *ngTemplateOutlet="sendFormStatuses"></ng-container>
+    <div [class.pending-opacity]="sendFormPending || sendFormSuccess || sendFormError"
+         class="calculate-form-wrapper">
+        <mat-form-field class="calculate-form-field calculate-form-field-middle">
+            <mat-label>*{{'formName' | translate}}</mat-label>
+            <input #firstInput
+                   formControlName="name"
+                   type="text" matInput class="calculate-form-input">
+        </mat-form-field>
+        <mat-form-field class="calculate-form-field calculate-form-field-short">
+            <mat-label>{{'formPhone' | translate}}</mat-label>
+            <input formControlName="phone"
+                   type="tel" matInput class="calculate-form-input">
+        </mat-form-field>
+        <mat-form-field class="calculate-form-field calculate-form-field-long">
+            <mat-label>*{{'formMail' | translate}}</mat-label>
+            <input formControlName="email"
+                   type="email" matInput class="calculate-form-input">
+        </mat-form-field>
+        <mat-form-field class="calculate-form-field calculate-form-field-middle">
+            <mat-label>{{'formFile' | translate}}</mat-label>
+            <ngx-mat-file-input [formControlName]="'file'"
+                                [multiple]="true"
+                                [accept]="acceptFileTypes"
+                                class="calculate-form-input calculate-form-file"
+            >
+            </ngx-mat-file-input>
+            <img class="absolute-right" src="assets/icons/clip.svg" style="position: absolute;right: 0;">
+        </mat-form-field>
+        <mat-form-field class="calculate-form-field calculate-form-field-long">
+            <mat-label>{{'formComment' | translate}}</mat-label>
+            <textarea formControlName="comment"
+                      type="text" matInput
+                      class="calculate-form-input"></textarea>
+        </mat-form-field>
+        <p class="calculate-form-text pale">*{{'formText1' | translate}}</p>
+        <p class="calculate-form-text">{{'formText2' | translate}}
+            <a [href]="(activeLang === languageEnum.RU) ? 'https://libete.ru/poleznie-statii/98-privacy-policy' : 'https://libete.ru/poleznaya-informatsiya/244-privacy-policy'"
+               target="_blank"
+               class="orange">{{'formPrivacy' | translate}}</a>
+        </p>
+        <button [disabled]="calculateForm.invalid" onclick="Comagic.addOfflineRequest({name: $('[formcontrolname = name]').val(),email: $('[formcontrolname = email]').val(),phone: $('[formcontrolname = phone]').val(),message: $('[formcontrolname = comment]').val()});"
+                class="orange-button calculate-form-submit">{{'formSubmit' | translate}}
+        </button>
+    </div>
+</form>
+</ng-template>
+
+
 <ng-template #lang>
+
     <div class="lang" (click)="toggleLang()">
         <div [class.lang-container-opened]="isLangsOpen"
              class="lang-container">
             <a *ngFor="let lang of languages"
                [routerLink]="'/' + lang"
-               (click)="setTitle(languageTitles[lang]); setMeta(languageMeta[lang])"
+               (click)="useLanguage(lang);"
                class="lang-item">
                 <img [src]="imageLangsPath + languageFlags[lang]" class="lang-item-image" alt="language flag">
             </a>
@@ -426,3 +431,5 @@
                 class="lang-arrow"><img src="assets/icons/lang-arrow.svg" class="lang-arrow-img"></button>
     </div>
 </ng-template>
+
+
