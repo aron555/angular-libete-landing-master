@@ -37,6 +37,7 @@
     "ngx-material-file-input": "^2.1.1",
     "rxjs": "^6.6.0",
     "tslib": "^1.13.0",
+    "urix": "^0.1.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
@@ -59,7 +60,7 @@
     "karma-jasmine-html-reporter": "^1.5.4",
     "protractor": "^7.0.0",
     "ts-node": "~8.10.2",
-    "tslint": "~6.1.2",
+    "eslint": "~7.5.0",
     "typescript": "~3.9.7"
   }
 }
