@@ -283,11 +283,10 @@
             </div>
             <section class="screen-content">
                 <div class="test-promo">
-                    <img [src]="thirdImage" alt="{{'testFree0' | translate}} {{'testTitle' | translate}}"
+                    <img [src]="thirdImage" alt="{{'testTitle' | translate}}"
                          class="test-promo-image">
                     <h2 class="title test-promo-title">
-                        <span class="orange">{{'testFree0' | translate}}</span>
-                        {{'testTitle' | translate}}
+                        <span class="orange">{{'testTitle' | translate}}</span>
                     </h2>
                     <p class="text-promo test-promo-text">{{'testText1' | translate}}</p>
                     <p class="text-promo test-promo-text">{{'testText2' | translate}}</p>
@@ -388,7 +387,7 @@
             <section class="screen-content">
                 <div class="calculate">
                     <h3 class="title calculate-title">{{'formTitle' | translate}}</h3>
-                    <img [src]="imageAdvantagesPath+'advantages.1.image' | translate"
+                    <img [src]="imageAdvantagesPath+('advantages.1.image' | translate)"
                          alt="{{'formTitle' | translate}}"
                          class="calculate-image">
                     <ng-container *ngTemplateOutlet="testTranlate"></ng-container>
