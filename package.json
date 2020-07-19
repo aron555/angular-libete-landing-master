@@ -38,7 +38,10 @@
     "rxjs": "^6.6.0",
     "tslib": "^2.0.0",
     "urix": "^0.1.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "@biesbjerg/ngx-translate-extract": "^7.0.2",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^5.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1000.3",
