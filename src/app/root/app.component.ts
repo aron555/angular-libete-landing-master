@@ -2,8 +2,7 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, PLATFORM_ID, In
 import {ScrollToService} from '@nicky-lenaers/ngx-scroll-to';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {FileValidator} from 'ngx-material-file-input';
-import {HttpClient} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {TestTranslateModalComponent} from '../modals/test-translate-modal/test-translate-modal.component';
 import {MatDialog} from '@angular/material/dialog';
 import {ActivatedRoute} from '@angular/router';
@@ -34,27 +33,25 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
     acceptFileTypes = `image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,
   application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`;
-    imageFlagsPath = './assets/flags/';
-    imageLangsPath = './assets/langs/';
-    imageAdvantagesPath = './assets/advantages/';
-    imageClientsPath = './assets/clients/';
+    imageLangsPath = 'assets/langs/';
+    imageClientsPath = 'assets/clients/';
     clients = CLIENTS;
     expandingIndexes = {};
     aboutImages = [
-        './assets/images/about-1.svg',
-        './assets/images/about-2.svg',
-        './assets/images/about-3.svg',
+        'assets/images/about-1.svg',
+        'assets/images/about-2.svg',
+        'assets/images/about-3.svg',
     ];
-    firstImage = './assets/images/image-first.svg';
-    thirdImage = './assets/images/image-third.svg';
+    firstImage = 'assets/images/image-first.svg';
+    thirdImage = 'assets/images/image-third.svg';
 
     sendFormPending = false;
     sendFormSuccess = false;
     sendFormError = false;
-    pendingLogoLetterImage = './assets/images/logo-letter.svg';
-    pendingLogoRotationImage = './assets/images/logo-rotation.svg';
-    sendFormSuccessImage = './assets/images/send-form-success.svg';
-    sendFormErrorImage = './assets/images/send-form-error.svg';
+    pendingLogoLetterImage = 'assets/images/logo-letter.svg';
+    pendingLogoRotationImage = 'assets/images/logo-rotation.svg';
+    sendFormSuccessImage = 'assets/images/send-form-success.svg';
+    sendFormErrorImage = 'assets/images/send-form-error.svg';
 
     activeLang = LANGUAGE.EN;
     languageEnum = LANGUAGE;
@@ -63,7 +60,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     languageFlags = LANGUAGE_FLAGS;
 
     useLanguage(language: string) {
-        this.translate.use(language);
+        this.translate.use(language.toLowerCase());
     }
 
     constructor(
@@ -77,16 +74,15 @@ export class AppComponent implements OnInit, AfterViewInit {
         private translate: TranslateService
     ) {
         this.initFormGroup();
-        translate.setDefaultLang('EN');
+        translate.setDefaultLang('en');
         this.languages = Object.values(LANGUAGE);
         this.route.params.subscribe(params => {
             if (params && params.lang) {
                 const lang = params.lang.toUpperCase();
                 this.activeLang = (lang in LANGUAGE) ? LANGUAGE[lang] : LANGUAGE.EN;
-                this.translate.use(this.activeLang)
+                this.translate.use(params.lang.toLowerCase());
                 this.activeExpandedIndex = null;
                 this.expandingIndexes = {0: true, 1: true, 2: true, 3: true};
-                /*this.content = CONTENT[lang];*/
                 setTimeout(() => this.expandingIndexes = {}, 1000);
                 const langs = Object.values(LANGUAGE);
                 langs.splice(langs.indexOf(this.activeLang), 1);
@@ -104,14 +100,6 @@ export class AppComponent implements OnInit, AfterViewInit {
             });
         });
     }
-
-    /*public setTitle(newTitle: string) {
-        this.titleService.setTitle(newTitle);
-    }
-
-    public setMeta(newMeta: string) {
-        this.metaTagService.updateTag({name: 'description', content: newMeta});
-    }*/
 
     initFormGroup() {
     }
@@ -132,21 +120,19 @@ export class AppComponent implements OnInit, AfterViewInit {
         const values = this.calculateForm.getRawValue();
         Object.keys(values).map(key => formData.append(key, values[key]));
         formData.append('text', 'Заявка на рассчет стоимости с лендинга');
-        formData.append('option', 'com_ajax');
-        formData.append('module', 'obrat');
-        formData.append('format', 'json');
         if (values.file && values.file._files && values.file._files.length) {
             values.file._files.map(file => formData.append('file[]', file));
         }
-        this.http.post<any>(environment.apiUrl, formData)
+        this.http.post<any>('https://libete.ru/phpmailer/mail.php', formData, {observe: 'events', responseType: 'text' as 'json'})
             .subscribe(
                 () => {
                     this.sendFormPending = false;
                     this.sendFormSuccess = true;
                 },
-                () => {
+                (error: HttpErrorResponse) => {
                     this.sendFormPending = false;
                     this.sendFormError = true;
+                    console.log(error.status, error.error);
                 });
     }
 

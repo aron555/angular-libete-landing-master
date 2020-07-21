@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {FileValidator} from 'ngx-material-file-input';
-import {environment} from '../../../environments/environment';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -51,22 +50,20 @@ export class TestTranslateModalComponent implements OnInit {
     const values = this.translateForm.getRawValue();
     Object.keys(values).map(key => formData.append(key, values[key]));
     formData.append('text', 'Заявка на тестовый перевод с лендинга');
-    formData.append('option', 'com_ajax');
-    formData.append('module', 'obrat');
-    formData.append('format', 'json');
     if (values.file && values.file._files && values.file._files.length) {
       values.file._files.map(file => formData.append('file[]', file));
     }
-    this.http.post<any>(environment.apiUrl, formData)
+    this.http.post<any>('https://libete.ru/phpmailer/mail.php', formData, { responseType: 'text' as 'json'})
       .subscribe(
         () => {
           this.sendFormPending = false;
           this.sendFormSuccess = true;
         },
-        () => {
-          this.sendFormPending = false;
-          this.sendFormError = true;
-        });
+          (error: HttpErrorResponse) => {
+              this.sendFormPending = false;
+              this.sendFormError = true;
+              console.log(error.status, error.error);
+          });
   }
 
   onMoreRequest() {

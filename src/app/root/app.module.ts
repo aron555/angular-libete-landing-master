@@ -29,7 +29,7 @@ export class RootRouterComponent {
 const routes: Routes = [
     {path: '', component: AppComponent},
     {path: ':lang', component: AppComponent},
-    {path: '**', redirectTo: '/en'},
+    {path: '**', redirectTo: '/EN'},
 ];
 
 @NgModule({
@@ -69,5 +69,5 @@ export class AppModule {
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
