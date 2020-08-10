@@ -1,52 +1,52 @@
 {
   "mainTranslations": {
     "0": {
-      "title": "Translation Services",
+      "title": "Translation",
       "items": {
-        "0": "Legal Translation",
-        "1": "Technical Translation",
-        "2": "Medical Translation"
+        "0": "legal",
+        "1": "technical",
+        "2": "medical"
       },
       "itemsSecond": {
-        "0": "Marketing Translation",
-        "1": "Scientific Translation",
-        "2": "Journalistic Translation"
+        "0": "marketing",
+        "1": "scientific",
+        "2": "journalistic"
       },
-      "promo": "Rate: from $0.02/word"
+      "promo": "Price: from $0,02/word"
     },
     "1": {
-      "title": "Interpreting Services",
+      "title": "Leverage our professional in situ interpreting,",
       "items": {
-        "0": "Consecutive and simultaneous interpreting at exhibitions, negotiation sessions, training sessions, and conferences",
-        "1": "Online interpreting (remote interpreter)",
-        "2": "Individual support and work with groups",
-        "3": "Interpreting at private or public events",
-        "4": "Voiced translation for media",
-        "5": "Simultaneous interpreting equipment rental"
+        "0": "consecutive and simultaneous interpreting at exhibitions, negotiation sessions, training sessions, and conferences",
+        "1": "online interpreting (remote interpreter)",
+        "2": "individual escort and work with groups",
+        "3": "interpreting at private or public events",
+        "4": "voiced translation for media",
+        "5": "simultaneous interpreting equipment rental"
       },
-      "promo": "Rate: from $35/hour"
+      "promo": "Price: from $35/hour"
     },
     "2": {
       "title": "Website & Software Localization",
       "items": {
         "0": "UI and content translation",
-        "1": "Adapting translations to cultural specifics of the target audience",
-        "2": "Adapting translations to technical specifics",
-        "3": "Handling specific file types",
-        "4": "Translation of associated documentation"
+        "1": "adapting translations to cultural specifics of the target audience",
+        "2": "adapting translations to technical specifics",
+        "3": "work with specific formats",
+        "4": "translation of associated documentation"
       },
-      "promo": "Rate: from $0.02/word"
+      "promo": "Price: from $0,02/word"
     },
     "3": {
-      "title": "Notarized Translation",
+      "title": "Certified Translation",
       "items": {
-        "0": "Translation certified by the notary’s signature and seal in compliance with the Russian legislation and official regulations adopted by other countries."
+        "0": "translation certified with a notary's signature or seal in compliance with Russian law and official regulations adopted by other countries."
       },
-      "promo": "Rate: from $8.5/document"
+      "promo": "Price: from $8,5/document"
     }
   },
   "mainTranslationButton": "Order Translation",
-  "flagsTitle": "CIS and Baltic states languages we translate:",
+  "flagsTitle": "We work with languages of the CIS and Baltic countries:",
   "flags": {
     "0": {
       "text": "Russian"
@@ -96,15 +96,15 @@
   },
   "testTitle": "Free test translation",
   "testText1": "Assess our swiftness and quality!",
-  "testText2": "We will provide you several test translations made by different translators so you can choose the one that you like most.",
+  "testText2": "We will show you several tests of our translators,     so you can choose the one that you like most.",
   "testButton": "Order Test Translation",
   "advantagesTitle": "Why order translation from Libete",
   "advantages": {
     "0": {
-      "text": "Personal manager provides end-to-end order support. Cutting-edge project management, quality assurance, text & speech recognition software"
+      "text": "Personal manager provides end-to-end order support.\n Cutting-edge project management, quality assurance, text & speech recognition software"
     },
     "1": {
-      "text": "Qualified native-speaker translators and editors"
+      "text": "Qualified translators and native-speaker editors"
     },
     "2": {
       "text": "ISO 9001:2015 and ISO 17100:2015 compliance"
@@ -119,43 +119,43 @@
       "text": "Libete is a member of the Chamber of Commerce and Industry of the Russian Federation"
     },
     "6": {
-      "text": "Urgent translations (order-to-text from 1 day)"
+      "text": "Urgent translations (order-to-text from 1 day)"
     }
   },
-  "formTitle": "Get free quote",
+  "formTitle": "Price Estimation",
   "formName": "Name",
   "formPhone": "Phone",
-  "formMail": "E-mail",
+  "formMail": "Email",
   "formFile": "Attach File",
   "formComment": "Comment",
-  "formText1": "Required",
-  "formText2": "By submitting this form, I give my consent to processing of my personal data as per the",
+  "formText1": " — Required",
+  "formText2": "By submitting this form, I give my consent to processing of my personal data as per the ",
   "formPrivacy": "Privacy Policy",
-  "formSubmit": "Send free quote request",
+  "formSubmit": "Send documents for price estimation",
   "clientsTitle": "Our Customers",
   "aboutTitle": "Company Profile",
   "aboutTexts": {
-    "0": "Today, Libete is a leading-edge and innovative translation company that can provide the best solution for the most complex tasks. Leverage our professional in situ interpreting, document certification, automated website localization, and other capabilities. There is nothing we can't handle.",
-    "1": "A large team of professionals and innovative techniques enable us to handle several tasks at a time, thereby reducing our customers' time, efforts and costs.",
+    "0": "Today, Libete is a leading-edge and innovative linguistic company that can provide the best solution for the hardest and most complex tasks. Leverage our professional in-situ interpreting, document certification, automated website localization, and other capabilities. There is nothing we can't handle.",
+    "1": "A large team of professionals and innovative techniques enable us to work on several tasks at a time, thereby reducing our customers' time efforts and costs.",
     "2": "To make sure the process is fast and transparent for us and the customer, we employ dedicated management software ensuring end-to-end workflow control.",
-    "3": "Advanced solutions turn routine tasks into automated processes, while our translators, editors, and reviewers collaborate in one online space, exchanging relevant experience and findings.",
+    "3": "Advanced solutions turn routine tasks into automated processes, while our translators, editors, and reviewers collaborate in one place online, exchanging relevant experience and findings.",
     "4": "For specialized projects, we involve native speakers having competences in specific fields.",
-    "5": "We provide world-class translations with quality confirmed by our satisfied customers from major European businesses."
+    "5": "We provide global standard-quality translations, which is proven by our satisfied customers from major European companies."
   },
-  "aboutPromo": "Request a test translation to assess our capabilities.",
-  "aboutOrder": "Request a test translation",
+  "aboutPromo": "Order a test translation to assess our capabilities.",
+  "aboutOrder": "Order Test Translation",
   "footerTitle": "Libete Translation Agency",
   "sentSuccessTitle": "Sent!",
   "sentSuccessText1": "Thank you for your request!",
-  "sentSuccessText2": "We will contact you shortly",
+  "sentSuccessText2": "We will contact you shortly.",
   "sentSuccessButton": "One more request",
   "sentErrorTitle": "Error",
   "sentErrorText1": "Sorry, an error occurred while submitting the form",
   "sentErrorText2": "Try again later",
   "sentErrorButton": "Send again",
-  "modalTitle": "Request a test translation",
+  "modalTitle": "Order Test Translation",
   "logoImage": "./assets/images/logo-en.svg",
   "languageFlag": "flag-rus.png",
   "languageTitle": "Libete Translation Agency",
-  "languageMeta": "Libete Translation Agency"
+  "languageMeta": "Libete Translation Agency Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
 }

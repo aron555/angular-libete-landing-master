@@ -79,5 +79,12 @@ export class TestTranslateModalComponent implements OnInit {
 
 enum LANGUAGE {
     EN = 'EN',
-    RU = 'RU'
+    RU = 'RU',
+    FR = 'FR',
+    DE = 'DE',
+    IT = 'IT',
+    ES = 'ES',
+    NL = 'NL',
+    PL = 'PL',
+    TR = 'TR'
 }

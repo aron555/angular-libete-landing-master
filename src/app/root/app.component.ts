@@ -254,15 +254,23 @@ const CLIENTS: Item[] = [
 enum LANGUAGE {
     EN = 'EN',
     RU = 'RU',
-    /*FR = 'FR',
+    FR = 'FR',
     DE = 'DE',
-    IT = 'IT',*/
+    IT = 'IT',
+    ES = 'ES',
+    NL = 'NL',
+    PL = 'PL',
+    TR = 'TR'
 }
 
 enum LANGUAGE_FLAGS {
     EN = 'flag-eng.svg',
     RU = 'flag-rus.png',
-    /*FR = 'flag-fra.svg',
+    FR = 'flag-fra.svg',
     DE = 'flag-ger.svg',
-    IT = 'flag-ita.svg',*/
+    IT = 'flag-ita.svg',
+    ES = 'flag-es.png',
+    NL = 'flag-nl.png',
+    PL = 'flag-pl.svg',
+    TR = 'flag-tr.png'
 }

@@ -1,0 +1,161 @@
+{
+  "mainTranslations": {
+    "0": {
+      "title": "Yazılı çeviri",
+      "items": {
+        "0": "Hukuki",
+        "1": "Teknik",
+        "2": "Medikal"
+      },
+      "itemsSecond": {
+        "0": "Pazarlama",
+        "1": "Akademik",
+        "2": "Basın Yayın"
+      },
+      "promo": "Sözcük başına 0,02$"
+    },
+    "1": {
+      "title": "Sözlü çeviri",
+      "items": {
+        "0": "Ardıl ve Simültane Çeviri: Sergiler, toplantılar, eğitimler, konferanslar...",
+        "1": "Online sözlü çeviri (uzaktan çeviri yöntemi)",
+        "2": "Bireysel destek veya grup çalışması",
+        "3": "Halka kapalı ya da açık etkinliklere yönelik çeviriler",
+        "4": "Medya ürünlerine yönelik dublaj çevirisi",
+        "5": "Simültane çeviri cihazları kiralama"
+      },
+      "promo": "Saatlik35$"
+    },
+    "2": {
+      "title": "Yerelleştirme ve yazılım çevirisi",
+      "items": {
+        "0": "Arayüz ve içerik çevirisi",
+        "1": "Çevirinin erek kitlenin kültürel niteliklerine uyarlanması ",
+        "2": "Çevirinin teknik kullanım amacına yönelik uyarlanması",
+        "3": "Özel formata sahip dosyalara yönelik çeviri ihtiyaçlarınız",
+        "4": "Ek belge çevirisi"
+      },
+      "promo": "Sözcük başına 0,02$"
+    },
+    "3": {
+      "title": "Noter onaylı çeviri",
+      "items": {
+        "0": "Resmi evrakınız çevrildikten sonra Rusya Federasyonu kanunları ile başka ülkelerin mevzuatlarının öngördüğü şekilde noter tarafından imzalanıp mühürlenir. "
+      },
+      "promo": "Belge başına 8,5$"
+    }
+  },
+  "mainTranslationButton": "Sipariş Ver",
+  "flagsTitle": "BDT ve Baltık dillerinde de çeviri yapıyoruz",
+  "flags": {
+    "0": {
+      "text": "Rusça"
+    },
+    "1": {
+      "text": "Ukraynaca"
+    },
+    "2": {
+      "text": "Belarusça"
+    },
+    "3": {
+      "text": "Kazakça"
+    },
+    "4": {
+      "text": "Azerbaycanca"
+    },
+    "5": {
+      "text": "Ermenice"
+    },
+    "6": {
+      "text": "Gürcüce"
+    },
+    "7": {
+      "text": "Moldovaca"
+    },
+    "8": {
+      "text": "Kırgızca"
+    },
+    "9": {
+      "text": "Tacikçe"
+    },
+    "10": {
+      "text": "Türkmence"
+    },
+    "11": {
+      "text": "Özbekçe"
+    },
+    "12": {
+      "text": "Letonyaca"
+    },
+    "13": {
+      "text": "Litvanyaca"
+    },
+    "14": {
+      "text": "Estonca"
+    }
+  },
+  "testTitle": "Test çevirileriniz ücretsiz.",
+  "testText1": "Kalitemizi ve hızımızı değerlendirin!",
+  "testText2": "Birkaç farklı çevirmenimiz, çevrilmesini istediğiniz metni çevirdikten sonra üslubu iş amacınıza daha uygun çeviriyi siz seçersiniz. ",
+  "testButton": "Test Çevirisi Gönder",
+  "advantagesTitle": "Neden Libete'yi Tercih Etmeliyim?",
+  "advantages": {
+    "0": {
+      "text": "Kişisel proje müdürünüz aracılığıyla çeviri yönetimi.\n Proje yönetimi, kalite kontrolü ve OCR-ASR hizmetlerinde kullanılan en güncel yazılımlar"
+    },
+    "1": {
+      "text": "Anadilinde yetenekli çevirmen ve düzeltmenler"
+    },
+    "2": {
+      "text": "ISO 9001:2015 ve ISO 17100:2015 sertifikalarının gerekliliklerine uygun iş sürecimiz"
+    },
+    "3": {
+      "text": "Farklı sektörler için oluşturduğumuz terim havuzu ve sözlükler"
+    },
+    "4": {
+      "text": "Tüm dünyaya hızlı ve güvenilir teslimat"
+    },
+    "5": {
+      "text": "Libete, Rusya Federasyonu Ticaret ve Sanayi Odası üyesidir"
+    },
+    "6": {
+      "text": "1 gün içinde acil çeviri"
+    }
+  },
+  "formTitle": "Fiyat Teklifi Alın",
+  "formName": "Adı Soyadı",
+  "formPhone": "Telefon",
+  "formMail": "E-posta",
+  "formFile": "Dosya ekle",
+  "formComment": "Yorumlar",
+  "formText1": "ile işaretlenmiş alanların doldurulması zorunludur",
+  "formText2": "İşbu formu gönderdiğimde kişisel bilgilerimin şirketin Gizlilik Politikası'ndaki hususlara uygun olarak işlenebileceğini onaylıyorum. ",
+  "formPrivacy": "Gizlilik Politikası'ndaki",
+  "formSubmit": "Fiyat teklifi almak için evrakınızı bizimle paylaşın",
+  "clientsTitle": "Referanslarımız",
+  "aboutTitle": "Hakkımızda",
+  "aboutTexts": {
+    "0": "Teknolojinin en yeni olanaklarından yararlanan Libete Çeviri, en zorlu çevirileriniz için bile en iyi çözümü bulur. Etkinlikleriniz için sözlü çeviri, resmi evrakınız için noter onaylı çeviri, web siteleriniz için otomatik lokalizasyon gibi çeviri ihtiyaçlarınız için buradayız.",
+    "1": "Profesyonel kadromuz ve kullandığımız modern teknik çözümler, projelerinizdeki farklı adımları eşzamanlı olarak yürütüyor, zamandan ve maliyetten tasarruf etmenize yardımcı oluyoruz.",
+    "2": "İş süreçlerimizin hem siz müşterilerimizin hem de bizim için şeffaf ve hızlı olabilmesi için özel yönetim programları kullanarak projelerinizi yönetiyor ve projenin her adımını kontrol ediyoruz.",
+    "3": "Kullandığımız modern teknoloji sayesinde çeviri süreçlerindeki pek çok rutin adımı otomatikleştirdik. Aynı platform üzerinde çalışan çevirmenlerimiz, düzeltmenlerimiz ve editörlerimiz, çevirilerinize yönelik yaratıcı buluşlarını ve deneyimlerini birbirleriyle paylaşıyor.",
+    "4": "Özel çevirileriniz, sektörünüzle ilgili çevirilerde deneyimli ve çevirinizin hedef dili anadili olan çevirmenlerimizce yapılır.",
+    "5": "Çevirilerimizin kalitesi, uluslararası standartların gerekliliklerine uygundur. Avrupa'nın önde gelen şirketlerine çeviri hizmeti sağlıyoruz."
+  },
+  "aboutPromo": "Çevirilerimizin kalitesi için hemen bir test çevirisi gönderin.",
+  "aboutOrder": "Test Çevirisi Gönder",
+  "footerTitle": "Libete Çeviri",
+  "sentSuccessTitle": "Gönderildi!",
+  "sentSuccessText1": "Bizimle iletişime geçtiğiniz için teşekkür ederiz!",
+  "sentSuccessText2": "En kısa süre içinde sizinle yeniden iletişime geçeceğiz.",
+  "sentSuccessButton": "Bir sorumuz daha var",
+  "sentErrorTitle": "Bir hata oluştu",
+  "sentErrorText1": "Maalesef formunuz gönderilirken bir hata oluştu.",
+  "sentErrorText2": "Formu göndermeyi bir süre.",
+  "sentErrorButton": "Sonra yeniden deneyin",
+  "modalTitle": "Test Çevirisi Gönder",
+  "logoImage": "./assets/images/logo-en.svg",
+  "languageFlag": "flag-tr.png",
+  "languageTitle": "Libete Çeviri",
+  "languageMeta": "Libete Çeviri Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
+}

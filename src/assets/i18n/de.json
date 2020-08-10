@@ -1,0 +1,161 @@
+{
+  "mainTranslations": {
+    "0": {
+      "title": "Schriftliche Übersetzung",
+      "items": {
+        "0": "Recht",
+        "1": "Technik",
+        "2": "Medizin"
+      },
+      "itemsSecond": {
+        "0": "Marketing",
+        "1": "Wissenschaft",
+        "2": "Publizistik"
+      },
+      "promo": "Preis ab $0,02 pro Wort"
+    },
+    "1": {
+      "title": "Dolmetschen",
+      "items": {
+        "0": "Konsekutiv- und Synchrondolmetschen: Ausstellungen, Verhandlungen, Trainings, Konferenzen",
+        "1": "Onlinedolmetschen (Fernarbeit eines Dolmetschers)",
+        "2": "individuelle Begleitung und Arbeit mit Gruppen",
+        "3": "Dolmetschen für geschlossene oder öffentliche Events",
+        "4": "nachsynchronisiertes Übersetzen von Medienprodukten",
+        "5": "Miete von Ausstattung für Synchronübersetzung"
+      },
+      "promo": "Preis ab $35 pro Stunde"
+    },
+    "2": {
+      "title": "Lokalisierung von Webseiten und Software",
+      "items": {
+        "0": "Übersetzung der Benutzerumgebung und der Inhalte",
+        "1": "Anpassung der Übersetzung an kulturelle Besonderheiten vom Zielpublikum",
+        "2": "Anpassung der Übersetzung an technische Aspekte der Anwendung",
+        "3": "Arbeit mit Materialien in Spezialformaten",
+        "4": "Übersetzung von Begleitdokumenten"
+      },
+      "promo": "Preis ab $0,02 pro Wort"
+    },
+    "3": {
+      "title": "Notarielle Übersetzung",
+      "items": {
+        "0": "Übersetzung von Dokumenten, die mit Unterschrift und Siegel des Notars im Einklang mit den Rechtsvorschriften Russlands und den amtlichen Anforderungen beurkundet sind"
+      },
+      "promo": "Preis ab $8.5 pro Dokument"
+    }
+  },
+  "mainTranslationButton": "Übersetzung bestellen",
+  "flagsTitle": "Wir arbeiten mit den Sprachen der Länder der GUS und des Baltikums:",
+  "flags": {
+    "0": {
+      "text": "Russisch"
+    },
+    "1": {
+      "text": "Ukrainisch"
+    },
+    "2": {
+      "text": "Weißrussisch"
+    },
+    "3": {
+      "text": "Kasachisch"
+    },
+    "4": {
+      "text": "Aserbaidschanisch"
+    },
+    "5": {
+      "text": "Armenisch"
+    },
+    "6": {
+      "text": "Georgisch"
+    },
+    "7": {
+      "text": "Moldauisch"
+    },
+    "8": {
+      "text": "Kirgisisch"
+    },
+    "9": {
+      "text": "Tadschikisch"
+    },
+    "10": {
+      "text": "Turkmenisch"
+    },
+    "11": {
+      "text": "Usbekisch"
+    },
+    "12": {
+      "text": "Lettisch"
+    },
+    "13": {
+      "text": "Litauisch"
+    },
+    "14": {
+      "text": "Estländisch"
+    }
+  },
+  "testTitle": "Wir führen gratis eine Testübersetzung durch",
+  "testText1": "Lernen Sie die Qualität und Geschwindigkeit unserer Arbeit zu schätzen!",
+  "testText2": "Wir werden Ihnen einige Optionen der Arbeiten unserer Übersetzer vorführen, und Sie werden denjenigen auswählen können, der Stil von dem Ihnen am nächsten liegt.",
+  "testButton": "Eine Testübersetzung anfordern",
+  "advantagesTitle": "Warum sollte man die Übersetzung bei Libete bestellen",
+  "advantages": {
+    "0": {
+      "text": "Begleitung des Auftrags durch einen persönlichen Manager.\n Neuste Software für die Verwaltung der Projekte, der Kontrolle der Qualität, der Text- und Spracherkennung"
+    },
+    "1": {
+      "text": "Qualifizierte Übersetzer und Korrekturleser - Sprachträger"
+    },
+    "2": {
+      "text": "Konformitätszertifikate ISO 17100:2015 und ISO 9001:2015"
+    },
+    "3": {
+      "text": "Terminologiedatenbanken und Wörterbücher für einzelne Branchen"
+    },
+    "4": {
+      "text": "Schnelle und zuverlässige Lieferung weltweit"
+    },
+    "5": {
+      "text": "Wir sind Mitglied der Industrie- und Handelskammer der Russischen Föderation"
+    },
+    "6": {
+      "text": "Dringende Übersetzungen ab 1 Tag"
+    }
+  },
+  "formTitle": "Kosten der Übersetzung berechnen",
+  "formName": "Name",
+  "formPhone": "Telefon",
+  "formMail": "E-Mail",
+  "formFile": "Datei hochladen",
+  "formComment": "Kommentar",
+  "formText1": "markiert Pflichtfelder",
+  "formText2": "Beim Senden dieser Form willige ich in die Bearbeitung meiner personenbezogenen Daten im Einklang mit der ",
+  "formPrivacy": "Datenschutzerklärung ein",
+  "formSubmit": "Dokumente für die Berechnung der Kosten senden",
+  "clientsTitle": "Unsere Kunden",
+  "aboutTitle": "Über uns",
+  "aboutTexts": {
+    "0": "Heute ist Libete eine moderne und technologische Gesellschaft, die fähig ist, eine beste Lösung für die anspruchsvollsten Aufgaben zu finden. Das mündliche Dolmetschen bei einer Veranstaltung, die notarielle Beurkundung von Dokumenten, eine automatisierte Lokalisierung der Webseite - für uns gibt es keine unlösbaren Aufgaben.",
+    "1": "Ein großer Personalbestand von Profis und moderne technische Lösungen ermöglichen es uns, eine Reihe von Aufgaben des Projekts parallel zueinander auszuführen, wodurch Zeit und Mittel unserer Kunden gespart werden.",
+    "2": "Damit der Arbeitsverlauf schnell und transparent für uns und den Kunden ist, verwenden wir besondere Managementsoftware, die es ermöglichen, die Arbeit zu verwalten und sie in allen Stadien zu kontrollieren.",
+    "3": "Dank den modernen Technologien werden viele Routineaufgaben automatisch ausgeführt, und unsere Übersetzer, Korrekturleser und Gutachter arbeiten online in einem einheitlichen Raum, indem sie eine aktuelle Erfahrung und kreative Ansätze miteinander teilen.",
+    "4": "Die Fachübersetzungen werden von Sprachträger mit Fachkenntnis auf dem konkreten Gebiet ausgeführt.",
+    "5": "Die Qualität unserer Übersetzungen entspricht internationalen Standards, und es wird von unseren Kunden aus großen europäischen Gesellschaften bestätigt."
+  },
+  "aboutPromo": "Bestellen Sie eine Testübersetzung, um das Niveau unserer Arbeit bewerten zu können.",
+  "aboutOrder": "Eine Testübersetzung anfordern",
+  "footerTitle": "Übersetzungsbüro Libete",
+  "sentSuccessTitle": "Gesendet!",
+  "sentSuccessText1": "Vielen Dank für Ihre Anfrage!",
+  "sentSuccessText2": "Wir werden schnellstmöglich Kontakt mit Ihnen aufnehmen.",
+  "sentSuccessButton": "Eine weitere Anfrage",
+  "sentErrorTitle": "Es ist ein Fehler aufgetreten",
+  "sentErrorText1": "Leider ist bei dem Senden der Form ein Fehler aufgetreten",
+  "sentErrorText2": "Versuchen Sie es bitte später wieder.",
+  "sentErrorButton": "Erneut senden",
+  "modalTitle": "Eine Testübersetzung anfordern",
+  "logoImage": "./assets/images/logo-en.svg",
+  "languageFlag": "flag-rus.png",
+  "languageTitle": "Übersetzungsbüro Libete",
+  "languageMeta": "Übersetzungsbüro Libete Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
+}

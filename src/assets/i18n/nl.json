@@ -1,0 +1,161 @@
+{
+  "mainTranslations": {
+    "0": {
+      "title": "Vertalingen",
+      "items": {
+        "0": "juridische",
+        "1": "technische",
+        "2": "medische"
+      },
+      "itemsSecond": {
+        "0": "marketing",
+        "1": "wetenschappelijke",
+        "2": "publicistiek"
+      },
+      "promo": "Prijs vanaf $0,02 per woord"
+    },
+    "1": {
+      "title": "Tolkdiensten",
+      "items": {
+        "0": "  consecutief tolken en simultaan tolken:  tentoonstellingen, onderhandelingen, trainingen, conferenties",
+        "1": "online tolken (tolk op afstand)",
+        "2": "individuele begeleiding en werken met groepen",
+        "3": "tolken bij privé of openbare evenementen",
+        "4": "voice-over vertaling van mediaproducten",
+        "5": "huren van apparatuur voor simultaanvertaling"
+      },
+      "promo": "Prijs vanaf $35 per uur"
+    },
+    "2": {
+      "title": "Lokalisatie van websites en software",
+      "items": {
+        "0": "vertaling van gebruikersinterface en content",
+        "1": "aanpassing van vertalingen aan de culturele kenmerken van de doelgroep",
+        "2": "aanpassing van vertalingen aan technische gebruiksaspecten",
+        "3": "werk met materialen in specifieke formaten",
+        "4": "vertaling van bijbehorende documentatie"
+      },
+      "promo": "Prijs vanaf $0,02 per woord"
+    },
+    "3": {
+      "title": "Notariële vertalingen",
+      "items": {
+        "0": "vertaling gewaarmerkt door de handtekening en het officiële zegel van een notaris in overeenstemming met de wetgeving van de Russische Federatie en officiële vereisten van andere landen."
+      },
+      "promo": "Prijs vanaf $8,5 per document"
+    }
+  },
+  "mainTranslationButton": "Vertaalopdracht plaatsen",
+  "flagsTitle": "We werken met de talen van de GOS-landen en de Baltische staten:",
+  "flags": {
+    "0": {
+      "text": "Russisch"
+    },
+    "1": {
+      "text": "Oekraïens"
+    },
+    "2": {
+      "text": "Wit-Russisch"
+    },
+    "3": {
+      "text": "Kazachs"
+    },
+    "4": {
+      "text": "Azerbeidzjaans"
+    },
+    "5": {
+      "text": "Armeens"
+    },
+    "6": {
+      "text": "Georgisch"
+    },
+    "7": {
+      "text": "Moldavisch"
+    },
+    "8": {
+      "text": "Kirgizisch"
+    },
+    "9": {
+      "text": "Tadzjieks"
+    },
+    "10": {
+      "text": "Turkmeens"
+    },
+    "11": {
+      "text": "Oezbeeks"
+    },
+    "12": {
+      "text": "Lets"
+    },
+    "13": {
+      "text": "Litouws"
+    },
+    "14": {
+      "text": "Ests"
+    }
+  },
+  "testTitle": "We maken gratis een proefvertaling",
+  "testText1": "Beoordeel de kwaliteit en de snelheid van ons werk!        ",
+  "testText2": "We bieden u een paar proefvertalingen   gemaakt door onze vertalers, zodat u daaruit het beste kunt   kiezen.",
+  "testButton": "Proefvertaling aanvragen",
+  "advantagesTitle": "Waarom de vertaalopdracht bij Libete plaatsen",
+  "advantages": {
+    "0": {
+      "text": "Orderbegeleiding door een persoonlijke manager. \n Nieuwste software voor projectmanagement, kwaliteitscontrole, tekst- en spraakherkenning."
+    },
+    "1": {
+      "text": "Gekwalificeerde native speaking vertalers en redacteuren"
+    },
+    "2": {
+      "text": "ISO 9001: 2015 en ISO 17100: 2015 gecertificeerd"
+    },
+    "3": {
+      "text": "Terminologische bases en aan het vakgebied verbonden woordenboeken"
+    },
+    "4": {
+      "text": "Snelle en betrouwbare levering wereldwijd"
+    },
+    "5": {
+      "text": "We zijn lid van de Kamer van Koophandel en Industrie van de Russische Federatie"
+    },
+    "6": {
+      "text": "Spoedvertalingen vanaf 1 dag"
+    }
+  },
+  "formTitle": "Prijs voor uw vertaling berekenen",
+  "formName": "Naam",
+  "formPhone": "Telefoonnummer",
+  "formMail": "E-mail",
+  "formFile": "Bestand toevoegen",
+  "formComment": "Commentaar",
+  "formText1": "verplichte velden",
+  "formText2": "Door dit formulier te versturen geef ik toestemming voor het verwerken van mijn persoonlijke gegevens volgens het privacybeleid ",
+  "formPrivacy": "Privacybeleid",
+  "formSubmit": "Documenten voor prijsberekening versturen",
+  "clientsTitle": "Onze klanten",
+  "aboutTitle": "Over ons",
+  "aboutTexts": {
+    "0": "Tegenwoordig is Libete een modern en technisch geavanceerd bedrijf dat de beste oplossing   kan bieden voor de moeilijkste en meest complexe taken. Tolken bij evenementen, notariële bekrachtiging   van documenten, geautomatiseerde website-lokalisatie – er zijn geen taken die   we niet aankunnen.",
+    "1": "Een groot team van professionals en moderne technische oplossingen stellen ons in staat om   een aantal taken binnen het project parallel uit te voeren, wat tijd en geld voor onze klanten bespaart.",
+    "2": "Om het werkproces voor ons en voor de klant snel en transparant te maken, gebruiken we speciale beheerprogramma's waarmee we het werk in alle stadia kunnen beheren en controleren.",
+    "3": "Dankzij moderne technologieën worden veel routinetaken automatisch uitgevoerd en werken onze vertalers, redacteuren en recensenten online in één   ruimte en wisselen relevante ervaringen en creatieve vondsten uit.",
+    "4": "Gespecialiseerde vertalingen worden uitgevoerd door native speakers die   competent zijn in het specifieke vakgebied.",
+    "5": "De kwaliteit van onze vertalingen voldoet aan internationale normen,   wat wordt bevestigd door onze tevreden   klanten van grote Europese bedrijven."
+  },
+  "aboutPromo": "Vraag een proefvertaling aan om ons werk te beoordelen.",
+  "aboutOrder": "Proefvertaling aanvragen",
+  "footerTitle": "Libete Vertaalbureau",
+  "sentSuccessTitle": "Verstuurd!",
+  "sentSuccessText1": "Bedankt voor uw aanvraag!",
+  "sentSuccessText2": "We nemen spoedig contact met u op",
+  "sentSuccessButton": "Nog een aanvraag",
+  "sentErrorTitle": "Er is een fout opgetreden",
+  "sentErrorText1": "Sorry, er is een fout opgetreden bij het versturen van het formulier",
+  "sentErrorText2": "Probeer het later nog eens",
+  "sentErrorButton": "Opnieuw versturen",
+  "modalTitle": "Proefvertaling aanvragen",
+  "logoImage": "./assets/images/logo-en.svg",
+  "languageFlag": "flag-nl.png",
+  "languageTitle": "Libete Vertaalbureau",
+  "languageMeta": "Libete Vertaalbureau Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
+}

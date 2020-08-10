@@ -1,0 +1,161 @@
+{
+  "mainTranslations": {
+    "0": {
+      "title": "Traduction",
+      "items": {
+        "0": "juridique",
+        "1": "technique",
+        "2": "médicale"
+      },
+      "itemsSecond": {
+        "0": "marketing ",
+        "1": "scientifique",
+        "2": "journalistique"
+      },
+      "promo": "Prix à partir de 0,02 $ par mot"
+    },
+    "1": {
+      "title": "Interprétation",
+      "items": {
+        "0": "interprétation consécutive et simultanée aux expositions, négociations, formations, conférences",
+        "1": "interprétation en ligne (travail à distance de l'interprète)",
+        "2": "interprétation de liaison",
+        "3": "interprétation pour des évènements privés ou publics",
+        "4": "traduction vocale pour les médias",
+        "5": "location d'équipement pour l'interprétation simultanée"
+      },
+      "promo": "Prix ​​à partir de 35 $ par heure"
+    },
+    "2": {
+      "title": "Localisation de sites et logiciels",
+      "items": {
+        "0": "traduction de l'interface utilisateur et du contenu",
+        "1": "adaptation de la traduction à la culture du public cible",
+        "2": "adaptation de la traduction aux aspects techniques d'utilisation",
+        "3": "travail avec du matériel à formats spécifiques",
+        "4": "traduction de la documentation connexe"
+      },
+      "promo": "Prix à partir de 0,02 $ par mot"
+    },
+    "3": {
+      "title": "Traduction notariée",
+      "items": {
+        "0": "traduction de documents, certifiée par la signature et le sceau d'un notaire conformément aux lois de la Russie et aux exigences officielles des autres pays."
+      },
+      "promo": "Prix ​​à partir de 8,5 $ par document"
+    }
+  },
+  "mainTranslationButton": "Commander la traduction",
+  "flagsTitle": "Nous travaillons avec les langues des pays de la CEI et baltes :",
+  "flags": {
+    "0": {
+      "text": "Russe"
+    },
+    "1": {
+      "text": "Ukrainien"
+    },
+    "2": {
+      "text": "Biélorusse"
+    },
+    "3": {
+      "text": "Kazakh"
+    },
+    "4": {
+      "text": "Azéri"
+    },
+    "5": {
+      "text": "Arménien"
+    },
+    "6": {
+      "text": "Géorgien"
+    },
+    "7": {
+      "text": "Moldave"
+    },
+    "8": {
+      "text": "Kirghiz"
+    },
+    "9": {
+      "text": "Tadjik"
+    },
+    "10": {
+      "text": "Turkmène"
+    },
+    "11": {
+      "text": "Ouzbek"
+    },
+    "12": {
+      "text": "Letton"
+    },
+    "13": {
+      "text": "Lituanien"
+    },
+    "14": {
+      "text": "Estonien"
+    }
+  },
+  "testTitle": "Nous faisons une traduction-test gratuite",
+  "testText1": "Évaluez la qualité et la rapidité de notre travail !",
+  "testText2": "Nous vous proposerons plusieurs variantes de travaux de nos traducteurs, et vous pourrez choisir celui dont le style de présentation est le plus convenable pour vous.",
+  "testButton": "Commander la traduction-test",
+  "advantagesTitle": "Pourquoi choisir « Libete »",
+  "advantages": {
+    "0": {
+      "text": "Prise en charge de la commande par votre manager personnel.\n Logiciel dernier cri en matière de gestion de projet, de contrôle qualité, d'OCR et reconnaissance vocale"
+    },
+    "1": {
+      "text": "Traducteurs et réviseurs qualifiés natifs"
+    },
+    "2": {
+      "text": "Certificats de conformité aux exigences des normes ISO 9001:2015 et ISO 17100:2015"
+    },
+    "3": {
+      "text": "Lexique et bases terminologiques pour domaines différents"
+    },
+    "4": {
+      "text": "Expédition rapide et fiable à travers le monde"
+    },
+    "5": {
+      "text": "Nous sommes membre de la Chambre de commerce et d'industrie de la Fédération de Russie"
+    },
+    "6": {
+      "text": "Traductions urgentes à partir de 1 jour"
+    }
+  },
+  "formTitle": "Demander un devis de traduction",
+  "formName": "Nom",
+  "formPhone": "Téléphone",
+  "formMail": "Email",
+  "formFile": "Joindre un fichier",
+  "formComment": "Commentaire",
+  "formText1": " les champs indiqués sont obligatoires",
+  "formText2": "En soumettant ce formulaire, je consens au traitement de mes données personnelles conformément à la ",
+  "formPrivacy": "la Politique de confidentialité",
+  "formSubmit": "Envoyer les documents pour le calcul du coût",
+  "clientsTitle": "Nos clients",
+  "aboutTitle": "Notre agence",
+  "aboutTexts": {
+    "0": "« Libete » aujourd'hui - une société moderne et technologique capable de trouver la meilleure solution pour les tâches les plus complexes. Interprétation lors d'un l'événement, authentification, localisation automatique du site - pour nous, il n'y a pas de tâche irréalisable.",
+    "1": "Un effectif important de professionnels et des solutions techniques modernes nous permettent d'effectuer en même temps un certain nombre de tâches sur le projet tout en faisant économiser à nos clients du temps et de l'argent.",
+    "2": "Pour rendre le flux de travail rapide et transparent, nous utilisons des programmes spécifiques de management qui nous permettent de gérer et de contrôler le travail à toutes les étapes.",
+    "3": "Grâce aux technologies modernes, de nombreuses tâches de routine sont effectuées automatiquement, et nos traducteurs, réviseurs et critiques travaillent en ligne dans un espace commun tout en effectuant des échanges de données d'expérience et d'idées novatrices.",
+    "4": "Les traductions spécialisées sont effectuées par des locuteurs natifs ayant la compétence réquise dans le secteur concerné.",
+    "5": "La qualité de nos traductions répond aux normes internationales, ce que confirment nos clients des grandes entreprises européennes."
+  },
+  "aboutPromo": "Veuillez commander la traduction-test pour évaluer le niveau de notre travail.",
+  "aboutOrder": "Commander la traduction-test",
+  "footerTitle": "Agence de traduction « Libete »",
+  "sentSuccessTitle": "Envoyé !",
+  "sentSuccessText1": "Merci pour votre demande !",
+  "sentSuccessText2": "Nous vous contacterons le plus tôt possible",
+  "sentSuccessButton": "Soumettre une autre demande",
+  "sentErrorTitle": "Une erreur est survenue",
+  "sentErrorText1": "Désolé, une erreur est survenue lors de l'envoi du formulaire.",
+  "sentErrorText2": "Veuillez réessayer un peu plus tard.",
+  "sentErrorButton": "Renvoyer",
+  "modalTitle": "Commander la traduction-test",
+  "logoImage": "./assets/images/logo-en.svg",
+  "languageFlag": "flag-fra.png",
+  "languageTitle": "Agence de traduction « Libete »",
+  "languageMeta": "Agence de traduction « Libete » Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
+}

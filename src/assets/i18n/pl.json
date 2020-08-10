@@ -1,0 +1,161 @@
+{
+  "mainTranslations": {
+    "0": {
+      "title": "Tłumaczenia pisemne",
+      "items": {
+        "0": "prawnicze",
+        "1": "techniczne",
+        "2": "medyczne"
+      },
+      "itemsSecond": {
+        "0": "marketingowe",
+        "1": "naukowe",
+        "2": "  publicystyczne"
+      },
+      "promo": "Cena: od $0,02 za słowo  "
+    },
+    "1": {
+      "title": "Tłumaczenia ustne ",
+      "items": {
+        "0": "umaczenia konsekutywne i symultaniczne: wystawy, spotkania, szkolenia, konferencje",
+        "1": "  tłumaczenia ustne online (praca zdalna tłumacza)",
+        "2": "  obsługa indywidualna i grupowa",
+        "3": "  tłumaczenia podczas imprez prywatnych i publicznych",
+        "4": "tłumaczenia audiowizualne",
+        "5": "  wynajem sprzętu do tłumaczeń symultanicznych"
+      },
+      "promo": "  Cena: od $35 za godzinę"
+    },
+    "2": {
+      "title": "  Lokalizacja stron www i oprogramowania",
+      "items": {
+        "0": "  tłumaczenia interfejsu użytkownika i treści",
+        "1": "dostosowanie tłumaczenia pod kątem różnic kulturowych odbiorców docelowych",
+        "2": "dostosowanie tłumaczenia pod kątem technicznych aspektów użytkowania",
+        "3": "praca z materiałami w specjalnych formatach",
+        "4": "tłumaczenia dokumentacji towarzyszącej"
+      },
+      "promo": "Cena: od $0,02 za słowo  "
+    },
+    "3": {
+      "title": "  Tłumaczenia poświadczone",
+      "items": {
+        "0": "tłumaczenia poświadczone opatrzone podpisem i pieczęcią notariusza zgodnie z przepisami prawa Federacji Rosyjskiej i wymaganiami innych krajów."
+      },
+      "promo": "Cena: od $8,5 za dokument"
+    }
+  },
+  "mainTranslationButton": "  Zamów tłumaczenie",
+  "flagsTitle": "Tłumaczymy na języki krajów WNP i krajów bałtyckich:",
+  "flags": {
+    "0": {
+      "text": "  Rosyjski"
+    },
+    "1": {
+      "text": "Ukraiński"
+    },
+    "2": {
+      "text": "Białoruski"
+    },
+    "3": {
+      "text": "Kazachski"
+    },
+    "4": {
+      "text": "Azerbejdżański"
+    },
+    "5": {
+      "text": "Ormiański"
+    },
+    "6": {
+      "text": "  Gruziński"
+    },
+    "7": {
+      "text": "  Mołdawski"
+    },
+    "8": {
+      "text": "  Kirgiski"
+    },
+    "9": {
+      "text": "Tadżycki"
+    },
+    "10": {
+      "text": "Turkmeński"
+    },
+    "11": {
+      "text": "Uzbecki"
+    },
+    "12": {
+      "text": "Łotewski"
+    },
+    "13": {
+      "text": "Litewski"
+    },
+    "14": {
+      "text": "Estoński"
+    }
+  },
+  "testTitle": "Możemy wykonać darmowe tłumaczenie próbne",
+  "testText1": "Oceń jakość i szybkość naszej pracy!",
+  "testText2": "Мы предоставим вам несколько вариантов работ наших переводчиков, и вы сможете выбрать того, чей стиль изложения наиболее вам близок.",
+  "testButton": "  Zamów tłumaczenie próbne",
+  "advantagesTitle": "Dlaczego warto zamówić tłumaczenie w Libete?",
+  "advantages": {
+    "0": {
+      "text": "Obsługa zamówienia przez personalnego menedżera.\n Najnowsze oprogramowanie do zarządzania projektami, kontroli jakości, rozpoznawania tekstu i mowy."
+    },
+    "1": {
+      "text": "Wykwalifikowani tłumacze i weryfikatorzy – native speakerzy"
+    },
+    "2": {
+      "text": "Certyfikaty zgodności ISO 9001:2015 i ISO 17100:2015"
+    },
+    "3": {
+      "text": "Bazy terminologiczne i słowniczki dla poszczególnych branż"
+    },
+    "4": {
+      "text": "Szybka i niezawodna dostawa na całym świecie"
+    },
+    "5": {
+      "text": "Jesteśmy członkiem Izby Handlowej Federacji Rosyjskiej"
+    },
+    "6": {
+      "text": "Tłumaczenia ekspresowe wykonujemy już od 1 dnia"
+    }
+  },
+  "formTitle": "Wycena tłumaczenia",
+  "formName": "  Imię",
+  "formPhone": "  Telefon",
+  "formMail": "E-mail",
+  "formFile": "  Dodaj plik",
+  "formComment": "  Uwagi",
+  "formText1": "pola obowiązkowe",
+  "formText2": "Wysyłając niniejszy formularz wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ",
+  "formPrivacy": "Polityką Prywatności",
+  "formSubmit": "Wyślij plik do wyceny",
+  "clientsTitle": "  Nasi Klienci",
+  "aboutTitle": " O nas",
+  "aboutTexts": {
+    "0": "Libete dzisiaj to nowoczesna i technologiczna firma, która potrafi znaleźć najlepsze rozwiązanie nawet najtrudniejszych zadań. Tłumaczenia ustne podczas imprez, poświadczenia notarialne dokumentów, zautomatyzowana lokalizacja stron www — nie ma problemów, których nie bylibyśmy w stanie rozwiązać!",
+    "1": "Duży zespół profesjonalistów i nowoczesne rozwiązania techniczne sprawiają, że możemy wykonywać kilka zadań w ramach jednego projektu jednocześnie, oszczędzając czas i pieniądze naszych klientów.",
+    "2": "Aby przepływ pracy był szybki i przejrzysty zarówno dla nas, jak i dla klienta, korzystamy ze specjalistycznego oprogramowania do zarządzania projektami, umożliwiającego zarządzanie pracą i jej kontrolowanie na wszystkich etapach.  ",
+    "3": "Dzięki nowoczesnym technologiom wiele rutynowych zadań jest wykonywanych automatycznie, a nasi tłumacze, korektorzy i weryfikatorzy pracują online w jednym środowisku, dzieląc się najnowszymi doświadczeniami i twórczymi odkryciami.  ",
+    "4": "Tłumaczenia specjalistyczne są wykonywane przez native speakerów posiadających kompetencje w danej branży.",
+    "5": "Wykonane przez nas tłumaczenia spełniają międzynarodowe standardy jakości, co potwierdzają nasi klienci z firm europejskich."
+  },
+  "aboutPromo": "Zamów tłumaczenie próbne, aby przekonać się o jakości naszej pracy.",
+  "aboutOrder": "  Zamów tłumaczenie próbne",
+  "footerTitle": "Biuro Tłumaczeń Libete",
+  "sentSuccessTitle": "Formularz został wysłany!",
+  "sentSuccessText1": "  Dziękujemy za kontakt!",
+  "sentSuccessText2": "  Skontaktujemy się z Tobą najszybciej jak to będzie możliwe",
+  "sentSuccessButton": "Wypełnij kolejny formularz",
+  "sentErrorTitle": "  Wystąpił błąd",
+  "sentErrorText1": "Przepraszamy, ale podczas wysyłania formularza wystąpił błąd",
+  "sentErrorText2": "Spróbuj ponownie później",
+  "sentErrorButton": "Wyślij ponownie",
+  "modalTitle": "  Zamów tłumaczenie próbne",
+  "logoImage": "./assets/images/logo-en.svg",
+  "languageFlag": "flag-pl.svg",
+  "languageTitle": "Biuro Tłumaczeń Libete",
+  "languageMeta": "Biuro Tłumaczeń Libete Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
+}
