@@ -40,11 +40,12 @@
     margin-top: -3px;
   }
   ::ng-deep .mat-expansion-panel-header {
-    max-height: 30px;
+    height: auto;
     max-width: 250px;
   }
 
   .content {
+    z-index: 1;
     &-first {
       padding-top: 33px;
 
@@ -418,11 +419,11 @@
   }
 
   ::ng-deep .mat-expansion-panel-header {
-    max-height: 20px;
+    /*max-height: 20px;*/
     max-width: 290px;
   }
   ::ng-deep .mat-expanded .mat-expansion-panel-header {
-    max-height: 25px;
+    /*max-height: 25px;*/
   }
 
   .panel {
@@ -507,6 +508,7 @@
     border-radius: 0;
 
     &-image {
+      z-index: 2;
       left: calc(50% - 95px);
       top: -85px;
       width: 190px;
@@ -756,7 +758,7 @@
       height: 20px;
 
       &-opened {
-        height: 150px;
+        height: auto;
       }
     }
 
@@ -765,7 +767,7 @@
       height: 20px;
 
       &:not(:first-child) {
-        margin-top: 10px;
+        margin-top: 5px;
       }
     }
 

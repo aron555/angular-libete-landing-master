@@ -62,8 +62,12 @@ body .comagic-widget {
 }
 
 ::ng-deep .mat-expansion-panel-header {
-  max-height: 48px;
+  height: auto;
   width: fit-content;
+}
+
+::ng-deep .mat-expansion-panel-header.mat-expanded {
+   height: auto;
 }
 
 ::ng-deep .mat-expansion-panel-header .mat-content {
@@ -612,7 +616,7 @@ body .comagic-widget {
     transition: all 0.15s ease;
 
     &-opened {
-      height: 150px;
+      height: auto;
       transition: all 0.35s ease;
     }
   }
@@ -622,7 +626,7 @@ body .comagic-widget {
     height: 20px;
 
     &:not(:first-child) {
-      margin-top: 10px;
+      margin-top: 5px;
     }
 
     &-image {

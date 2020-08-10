@@ -30,7 +30,7 @@
             <section class="screen-content">
                 <header class="header">
                     <div class="header-row">
-                        <img [src]="'logoImage'|translate" class="header-logo"
+                        <img [src]="(activeLang === languageEnum.RU) ? './assets/images/logo.svg' : './assets/images/logo-en.svg'" class="header-logo"
                              alt="logo libete">
                         <div class="row-end">
                             <div class="small-mobile-hide">

@@ -154,8 +154,6 @@
   "sentErrorText2": "Formu göndermeyi bir süre.",
   "sentErrorButton": "Sonra yeniden deneyin",
   "modalTitle": "Test Çevirisi Gönder",
-  "logoImage": "./assets/images/logo-en.svg",
-  "languageFlag": "flag-tr.png",
   "languageTitle": "Libete Çeviri",
   "languageMeta": "Libete Çeviri Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов"
 }
