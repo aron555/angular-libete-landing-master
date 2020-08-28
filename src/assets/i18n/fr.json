@@ -157,13 +157,13 @@
   "languageTitle": "Agence de traduction « Libete »",
   "languageMeta": "Agence de traduction « Libete » Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов",
   "cookie": {
-    "message": "Using the site libete.ru, I give my consent to the processing of my ",
+    "message": "Using the site libete.ru, I give my consent to the processing of my personal data.",
     "dismiss": "Got it!",
     "allow": "Allow cookies",
     "deny": "Decline",
     "link": "Learn more",
     "policy": "Cookie Policy",
-    "policyLink": "personal data",
-    "policyHref": "https://libete.ru/policy"
+    "policyLink": "Learn more",
+    "policyHref": "https://libete.ru/poleznaya-informatsiya/244-privacy-policy"
   }
 }

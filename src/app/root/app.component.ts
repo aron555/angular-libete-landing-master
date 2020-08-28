@@ -87,9 +87,10 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         @Inject(PLATFORM_ID) private platformId: object,
         private translate: TranslateService,
         private ccService: NgcCookieConsentService,
-        private translateService:TranslateService
+        private translateService: TranslateService
     ) {
         this.initFormGroup();
+        translate.setDefaultLang('en');
         this.languages = Object.values(LANGUAGE);
         this.route.params.subscribe(params => {
             if (params && params.lang) {
@@ -113,6 +114,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
             translate.get('languageMeta').subscribe((res: string) => {
                 metaTagService.updateTag({name: 'description', content: res});
             });
+            this.configureCookieConsent();
         });
     }
 
@@ -124,40 +126,49 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(
             () => {
                 // you can use this.ccService.getConfig() to do stuff...
+                // console.log('popupOpen');
             });
 
         this.popupCloseSubscription = this.ccService.popupClose$.subscribe(
             () => {
                 // you can use this.ccService.getConfig() to do stuff...
+                // console.log('popupClose');
             });
 
         this.initializeSubscription = this.ccService.initialize$.subscribe(
             (event: NgcInitializeEvent) => {
                 // you can use this.ccService.getConfig() to do stuff...
+                // console.log(`initialize: ${JSON.stringify(event)}`);
             });
 
         this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
             (event: NgcStatusChangeEvent) => {
                 // you can use this.ccService.getConfig() to do stuff...
+                // console.log(`statusChange: ${JSON.stringify(event)}`);
             });
 
         this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(
             () => {
                 // you can use this.ccService.getConfig() to do stuff...
+                // console.log(`revokeChoice`);
             });
 
         this.noCookieLawSubscription = this.ccService.noCookieLaw$.subscribe(
             (event: NgcNoCookieLawEvent) => {
                 // you can use this.ccService.getConfig() to do stuff...
+                // console.log(`noCookieLaw: ${JSON.stringify(event)}`);
             });
 
-        this.translateService.setDefaultLang('en');
+        this.configureCookieConsent();
 
-        this.translateService//
+    }
+
+    configureCookieConsent() {
+        this.translateService
             .get(['cookie.header', 'cookie.message', 'cookie.dismiss', 'cookie.allow', 'cookie.deny', 'cookie.link', 'cookie.policy', 'cookie.policyLink', 'cookie.policyHref'])
             .subscribe(data => {
-
-                this.ccService.getConfig().content = this.ccService.getConfig().content || {} ;
+                // console.log(data);
+                this.ccService.getConfig().content = this.ccService.getConfig().content || {};
                 // Override default messages with the translated ones
                 this.ccService.getConfig().content.header = data['cookie.header'];
                 this.ccService.getConfig().content.message = data['cookie.message'];
@@ -168,9 +179,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
                 this.ccService.getConfig().content.policy = data['cookie.policy'];
                 this.ccService.getConfig().content.cookiePolicyLink = data['cookie.policyLink'];
                 this.ccService.getConfig().content.cookiePolicyHref = data['cookie.policyHref'];
-
-                this.ccService.destroy();
-                this.ccService.init(this.ccService.getConfig());
+                this.ccService.destroy();// remove previous cookie bar (with default messages)
+                this.ccService.init(this.ccService.getConfig()); // update config with translated messages
             });
     }
 
@@ -200,7 +210,10 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         if (values.file && values.file._files && values.file._files.length) {
             values.file._files.map(file => formData.append('file[]', file));
         }
-        this.http.post<any>('https://libete.ru/phpmailer/mail.php', formData, {observe: 'events', responseType: 'text' as 'json'})
+        this.http.post<any>('https://libete.ru/phpmailer/mail.php', formData, {
+            observe: 'events',
+            responseType: 'text' as 'json'
+        })
             .subscribe(
                 () => {
                     this.sendFormPending = false;

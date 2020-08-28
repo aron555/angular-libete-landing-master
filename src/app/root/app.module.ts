@@ -54,15 +54,15 @@ const cookieConfig:NgcCookieConsentConfig = {
     },
     elements:{
         messagelink: `
-    <span id="cookieconsent:desc" class="cc-message">{{message}}
+    <span id="cookieconsent" class="cc-message">{{message}}
       <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{cookiePolicyHref}}" target="_blank">{{cookiePolicyLink}}</a>
     </span>
     `,
     },
     content:{
-        message: 'Using the site libete.ru, I give my consent to the processing of my ',
+        message: 'Using the site libete.ru, I give my consent to the processing of my personal data.',
 
-        cookiePolicyLink: 'personal data',
+        cookiePolicyLink: 'Learn more',
         cookiePolicyHref: 'https://libete.ru/poleznaya-informatsiya/244-privacy-policy'
     }
 };
