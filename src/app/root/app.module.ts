@@ -18,6 +18,8 @@ import {ClickOutsideModule} from 'ng-click-outside';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
+import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+
 
 @Component({
     selector: 'app-root-router',
@@ -31,6 +33,33 @@ const routes: Routes = [
     {path: ':lang', component: AppComponent},
     {path: '**', redirectTo: '/EN'},
 ];
+
+const cookieConfig:NgcCookieConsentConfig = {
+    cookie: {
+        domain: 'libete.ru'
+    },
+    palette: {
+        popup: {
+            background: '#000'
+        },
+        button: {
+            background: '#f1d600'
+        }
+    },
+    theme: 'edgeless',
+    type: 'opt-out',
+    layout: 'my-custom-layout',
+    layouts: {
+        'my-custom-layout': '{{messagelink}}{{compliance}}'
+    },
+    elements:{
+        messagelink: `
+    <span id="cookieconsent:desc" class="cc-message">{{message}}
+      <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{cookiePolicyHref}}" target="_blank">{{cookiePolicyLink}}</a>
+    </span>
+    `,
+    }
+};
 
 @NgModule({
     imports: [
@@ -56,10 +85,11 @@ const routes: Routes = [
                 deps: [HttpClient]
             }
         }),
+        NgcCookieConsentModule.forRoot(cookieConfig)
     ],
     declarations: [
         RootRouterComponent,
-        AppComponent,
+        AppComponent
     ],
     providers: [],
     bootstrap: [RootRouterComponent]

@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, PLATFORM_ID, Inject} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, PLATFORM_ID, Inject, OnDestroy} from '@angular/core';
 import {ScrollToService} from '@nicky-lenaers/ngx-scroll-to';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {FileValidator} from 'ngx-material-file-input';
@@ -9,6 +9,13 @@ import {ActivatedRoute} from '@angular/router';
 import {Title, Meta} from '@angular/platform-browser';
 import {isPlatformBrowser} from '@angular/common';
 import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
+import {
+    NgcCookieConsentService,
+    NgcInitializeEvent,
+    NgcNoCookieLawEvent,
+    NgcStatusChangeEvent
+} from 'ngx-cookieconsent';
+import {Subscription} from 'rxjs';
 
 @Component({
     selector: 'app-root',
@@ -16,13 +23,20 @@ import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
     styleUrls: ['./app.component.scss', './app.component.mobile.scss']
 })
 
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     @ViewChild('scrollSection') scrollSection: ElementRef;
     @ViewChild('firstInput') firstInput: ElementRef;
     sectionClasses = [];
     sectionPositions = [];
     activeSectionIndex = 0;
     activeExpandedIndex: number;
+
+    private popupOpenSubscription: Subscription;
+    private popupCloseSubscription: Subscription;
+    private initializeSubscription: Subscription;
+    private statusChangeSubscription: Subscription;
+    private revokeChoiceSubscription: Subscription;
+    private noCookieLawSubscription: Subscription;
 
     calculateForm = new FormGroup({
         name: new FormControl('', Validators.required),
@@ -71,7 +85,9 @@ export class AppComponent implements OnInit, AfterViewInit {
         private titleService: Title,
         private metaTagService: Meta,
         @Inject(PLATFORM_ID) private platformId: object,
-        private translate: TranslateService
+        private translate: TranslateService,
+        private ccService: NgcCookieConsentService,
+        private translateService:TranslateService
     ) {
         this.initFormGroup();
         translate.setDefaultLang('en');
@@ -105,6 +121,66 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
 
     ngOnInit() {
+        // subscribe to cookieconsent observables to react to main events
+        this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(
+            () => {
+                // you can use this.ccService.getConfig() to do stuff...
+            });
+
+        this.popupCloseSubscription = this.ccService.popupClose$.subscribe(
+            () => {
+                // you can use this.ccService.getConfig() to do stuff...
+            });
+
+        this.initializeSubscription = this.ccService.initialize$.subscribe(
+            (event: NgcInitializeEvent) => {
+                // you can use this.ccService.getConfig() to do stuff...
+            });
+
+        this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
+            (event: NgcStatusChangeEvent) => {
+                // you can use this.ccService.getConfig() to do stuff...
+            });
+
+        this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(
+            () => {
+                // you can use this.ccService.getConfig() to do stuff...
+            });
+
+        this.noCookieLawSubscription = this.ccService.noCookieLaw$.subscribe(
+            (event: NgcNoCookieLawEvent) => {
+                // you can use this.ccService.getConfig() to do stuff...
+            });
+
+        this.translateService//
+            .get(['cookie.header', 'cookie.message', 'cookie.dismiss', 'cookie.allow', 'cookie.deny', 'cookie.link', 'cookie.policy', 'cookie.policyLink', 'cookie.policyHref'])
+            .subscribe(data => {
+
+                this.ccService.getConfig().content = this.ccService.getConfig().content || {} ;
+                // Override default messages with the translated ones
+                this.ccService.getConfig().content.header = data['cookie.header'];
+                this.ccService.getConfig().content.message = data['cookie.message'];
+                this.ccService.getConfig().content.dismiss = data['cookie.dismiss'];
+                this.ccService.getConfig().content.allow = data['cookie.allow'];
+                this.ccService.getConfig().content.deny = data['cookie.deny'];
+                this.ccService.getConfig().content.link = data['cookie.link'];
+                this.ccService.getConfig().content.policy = data['cookie.policy'];
+                this.ccService.getConfig().content.cookiePolicyLink = data['cookie.policyLink'];
+                this.ccService.getConfig().content.cookiePolicyHref = data['cookie.policyHref'];
+
+                this.ccService.destroy();
+                this.ccService.init(this.ccService.getConfig());
+            });
+    }
+
+    ngOnDestroy() {
+        // unsubscribe to cookieconsent observables to prevent memory leaks
+        this.popupOpenSubscription.unsubscribe();
+        this.popupCloseSubscription.unsubscribe();
+        this.initializeSubscription.unsubscribe();
+        this.statusChangeSubscription.unsubscribe();
+        this.revokeChoiceSubscription.unsubscribe();
+        this.noCookieLawSubscription.unsubscribe();
     }
 
     ngAfterViewInit() {

@@ -30,7 +30,8 @@
               "src/.htaccess"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/style-guides/cookieconsent.min.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -40,7 +41,8 @@
             "scripts": [
               "src/assets/js/jquery.min.js",
               "src/assets/js/snap.js",
-              "src/assets/js/blobs-anim.js"
+              "src/assets/js/blobs-anim.js",
+              "src/assets/js/cookieconsent.min.js"
             ]
           },
           "configurations": {
