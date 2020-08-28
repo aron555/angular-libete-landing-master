@@ -90,7 +90,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         private translateService:TranslateService
     ) {
         this.initFormGroup();
-        translate.setDefaultLang('en');
         this.languages = Object.values(LANGUAGE);
         this.route.params.subscribe(params => {
             if (params && params.lang) {
@@ -151,6 +150,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
             (event: NgcNoCookieLawEvent) => {
                 // you can use this.ccService.getConfig() to do stuff...
             });
+
+        this.translateService.setDefaultLang('en');
 
         this.translateService//
             .get(['cookie.header', 'cookie.message', 'cookie.dismiss', 'cookie.allow', 'cookie.deny', 'cookie.link', 'cookie.policy', 'cookie.policyLink', 'cookie.policyHref'])
