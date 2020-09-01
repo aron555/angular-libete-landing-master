@@ -3,14 +3,14 @@
     "0": {
       "title": "Traducción   ",
       "items": {
-        "0": "  legal",
-        "1": "  técnica",
-        "2": "  médica"
+        "0": "legal",
+        "1": "técnica",
+        "2": "médica"
       },
       "itemsSecond": {
-        "0": "  marketing",
-        "1": "  científica",
-        "2": "  publicística"
+        "0": "marketing",
+        "1": "científica",
+        "2": "publicística"
       },
       "promo": "Precio desde $ 0,02 por palabra  "
     },
@@ -38,7 +38,7 @@
       "promo": "Precio desde $ 0,02 por palabra  "
     },
     "3": {
-      "title": "  Traducción notarial",
+      "title": "Traducción notarial",
       "items": {
         "0": "traducción de documentos, confirmada por la firma y sello de un notario en conformidad con las leyes de Rusia y los requisitos oficiales de otros países."
       },
@@ -55,43 +55,43 @@
       "text": "ucraniano"
     },
     "2": {
-      "text": "  bielorruso"
+      "text": "bielorruso"
     },
     "3": {
-      "text": "  kazajo"
+      "text": "kazajo"
     },
     "4": {
       "text": "azerí"
     },
     "5": {
-      "text": "  armenio"
+      "text": "armenio"
     },
     "6": {
-      "text": "  georgiano"
+      "text": "georgiano"
     },
     "7": {
       "text": "moldavo"
     },
     "8": {
-      "text": "  kirguís"
+      "text": "kirguís"
     },
     "9": {
-      "text": "  tayiko"
+      "text": "tayiko"
     },
     "10": {
-      "text": "  turcomano"
+      "text": "turcomano"
     },
     "11": {
       "text": "uzbeko"
     },
     "12": {
-      "text": "  letón"
+      "text": "letón"
     },
     "13": {
       "text": "lituano"
     },
     "14": {
-      "text": "  estonio"
+      "text": "estonio"
     }
   },
   "testTitle": "Realizamos pruebas de traducción de forma gratuita",
@@ -152,10 +152,10 @@
   "sentErrorTitle": "Se ha producido un error",
   "sentErrorText1": "Lo sentimos, pero ocurrió un error al enviar el formulario",
   "sentErrorText2": "Intente nuevamente más tarde",
-  "sentErrorButton": "  Enviar de nuevo",
+  "sentErrorButton": "Enviar de nuevo",
   "modalTitle": "Solicitar una prueba de traducción",
   "languageTitle": "Agencia de traducción Libete",
-  "languageMeta": "Agencia de traducción Libete Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов",
+  "languageMeta": "Agencia de traducción Libete Los servicios baratos y urgentes de la agencia de traducción en línea en Moscú de varios idiomas, familiarizarse con las tarifas y comentarios sobre el centro y la oficina de traducción",
   "cookie": {
     "message": "Using the site libete.ru, I give my consent to the processing of my personal data.",
     "dismiss": "Got it!",

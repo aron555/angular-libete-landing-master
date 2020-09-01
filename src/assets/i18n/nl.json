@@ -17,7 +17,7 @@
     "1": {
       "title": "Tolkdiensten",
       "items": {
-        "0": "  consecutief tolken en simultaan tolken:  tentoonstellingen, onderhandelingen, trainingen, conferenties",
+        "0": "consecutief tolken en simultaan tolken:  tentoonstellingen, onderhandelingen, trainingen, conferenties",
         "1": "online tolken (tolk op afstand)",
         "2": "individuele begeleiding en werken met groepen",
         "3": "tolken bij privé of openbare evenementen",
@@ -96,7 +96,7 @@
   },
   "testTitle": "We maken gratis een proefvertaling",
   "testText1": "Beoordeel de kwaliteit en de snelheid van ons werk!        ",
-  "testText2": "We bieden u een paar proefvertalingen   gemaakt door onze vertalers, zodat u daaruit het beste kunt   kiezen.",
+  "testText2": "We bieden u een paar proefvertalingen gemaakt door onze vertalers, zodat u daaruit het beste kunt kiezen.",
   "testButton": "Proefvertaling aanvragen",
   "advantagesTitle": "Waarom de vertaalopdracht bij Libete plaatsen",
   "advantages": {
@@ -129,18 +129,18 @@
   "formFile": "Bestand toevoegen",
   "formComment": "Commentaar",
   "formText1": "verplichte velden",
-  "formText2": "Door dit formulier te versturen geef ik toestemming voor het verwerken van mijn persoonlijke gegevens volgens het privacybeleid ",
+  "formText2": "Door dit formulier te versturen geef ik toestemming voor het verwerken van mijn persoonlijke gegevens volgens het",
   "formPrivacy": "Privacybeleid",
   "formSubmit": "Documenten voor prijsberekening versturen",
   "clientsTitle": "Onze klanten",
   "aboutTitle": "Over ons",
   "aboutTexts": {
-    "0": "Tegenwoordig is Libete een modern en technisch geavanceerd bedrijf dat de beste oplossing   kan bieden voor de moeilijkste en meest complexe taken. Tolken bij evenementen, notariële bekrachtiging   van documenten, geautomatiseerde website-lokalisatie – er zijn geen taken die   we niet aankunnen.",
-    "1": "Een groot team van professionals en moderne technische oplossingen stellen ons in staat om   een aantal taken binnen het project parallel uit te voeren, wat tijd en geld voor onze klanten bespaart.",
+    "0": "Tegenwoordig is Libete een modern en technisch geavanceerd bedrijf dat de beste oplossing kan bieden voor de moeilijkste en meest complexe taken. Tolken bij evenementen, notariële bekrachtiging van documenten, geautomatiseerde website-lokalisatie – er zijn geen taken die we niet aankunnen.",
+    "1": "Een groot team van professionals en moderne technische oplossingen stellen ons in staat om een aantal taken binnen het project parallel uit te voeren, wat tijd en geld voor onze klanten bespaart.",
     "2": "Om het werkproces voor ons en voor de klant snel en transparant te maken, gebruiken we speciale beheerprogramma's waarmee we het werk in alle stadia kunnen beheren en controleren.",
-    "3": "Dankzij moderne technologieën worden veel routinetaken automatisch uitgevoerd en werken onze vertalers, redacteuren en recensenten online in één   ruimte en wisselen relevante ervaringen en creatieve vondsten uit.",
-    "4": "Gespecialiseerde vertalingen worden uitgevoerd door native speakers die   competent zijn in het specifieke vakgebied.",
-    "5": "De kwaliteit van onze vertalingen voldoet aan internationale normen,   wat wordt bevestigd door onze tevreden   klanten van grote Europese bedrijven."
+    "3": "Dankzij moderne technologieën worden veel routinetaken automatisch uitgevoerd en werken onze vertalers, redacteuren en recensenten online in één ruimte en wisselen relevante ervaringen en creatieve vondsten uit.",
+    "4": "Gespecialiseerde vertalingen worden uitgevoerd door native speakers die competent zijn in het specifieke vakgebied.",
+    "5": "De kwaliteit van onze vertalingen voldoet aan internationale normen, wat wordt bevestigd door onze tevreden klanten van grote Europese bedrijven."
   },
   "aboutPromo": "Vraag een proefvertaling aan om ons werk te beoordelen.",
   "aboutOrder": "Proefvertaling aanvragen",
@@ -155,7 +155,7 @@
   "sentErrorButton": "Opnieuw versturen",
   "modalTitle": "Proefvertaling aanvragen",
   "languageTitle": "Libete Vertaalbureau",
-  "languageMeta": "Libete Vertaalbureau Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов",
+  "languageMeta": "Libete Vertaalbureau Goedkope en dringende Vertaalbureau diensten online in Moskou vanuit verschillende talen, zie de prijzen en beoordelingen van het centrum en vertaalbureau",
   "cookie": {
     "message": "Using the site libete.ru, I give my consent to the processing of my personal data.",
     "dismiss": "Got it!",

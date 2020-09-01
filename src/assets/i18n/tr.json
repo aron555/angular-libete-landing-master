@@ -30,7 +30,7 @@
       "title": "Yerelleştirme ve yazılım çevirisi",
       "items": {
         "0": "Arayüz ve içerik çevirisi",
-        "1": "Çevirinin erek kitlenin kültürel niteliklerine uyarlanması ",
+        "1": "Çevirinin erek kitlenin kültürel niteliklerine uyarlanması",
         "2": "Çevirinin teknik kullanım amacına yönelik uyarlanması",
         "3": "Özel formata sahip dosyalara yönelik çeviri ihtiyaçlarınız",
         "4": "Ek belge çevirisi"
@@ -129,7 +129,7 @@
   "formFile": "Dosya ekle",
   "formComment": "Yorumlar",
   "formText1": "ile işaretlenmiş alanların doldurulması zorunludur",
-  "formText2": "İşbu formu gönderdiğimde kişisel bilgilerimin şirketin Gizlilik Politikası'ndaki hususlara uygun olarak işlenebileceğini onaylıyorum. ",
+  "formText2": "İşbu formu gönderdiğimde kişisel bilgilerimin şirketin Gizlilik Politikası'ndaki hususlara uygun olarak işlenebileceğini onaylıyorum.",
   "formPrivacy": "Gizlilik Politikası'ndaki",
   "formSubmit": "Fiyat teklifi almak için evrakınızı bizimle paylaşın",
   "clientsTitle": "Referanslarımız",
@@ -155,7 +155,7 @@
   "sentErrorButton": "Sonra yeniden deneyin",
   "modalTitle": "Test Çevirisi Gönder",
   "languageTitle": "Libete Çeviri",
-  "languageMeta": "Libete Çeviri Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов",
+  "languageMeta": "Libete Çeviri Moskova'da çeşitli dillerden çevrimiçi çeviri ajansının ucuz ve acil hizmetleri, merkez ve çeviri büroları hakkındaki fiyatları ve yorumları okuyun",
   "cookie": {
     "message": "Using the site libete.ru, I give my consent to the processing of my personal data.",
     "dismiss": "Got it!",

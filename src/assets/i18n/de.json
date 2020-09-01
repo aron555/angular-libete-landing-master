@@ -19,9 +19,9 @@
       "items": {
         "0": "Konsekutiv- und Synchrondolmetschen: Ausstellungen, Verhandlungen, Trainings, Konferenzen",
         "1": "Onlinedolmetschen (Fernarbeit eines Dolmetschers)",
-        "2": "individuelle Begleitung und Arbeit mit Gruppen",
+        "2": "Individuelle Begleitung und Arbeit mit Gruppen",
         "3": "Dolmetschen für geschlossene oder öffentliche Events",
-        "4": "nachsynchronisiertes Übersetzen von Medienprodukten",
+        "4": "Nachsynchronisiertes Übersetzen von Medienprodukten",
         "5": "Miete von Ausstattung für Synchronübersetzung"
       },
       "promo": "Preis ab $35 pro Stunde"
@@ -129,8 +129,8 @@
   "formFile": "Datei hochladen",
   "formComment": "Kommentar",
   "formText1": "markiert Pflichtfelder",
-  "formText2": "Beim Senden dieser Form willige ich in die Bearbeitung meiner personenbezogenen Daten im Einklang mit der ",
-  "formPrivacy": "Datenschutzerklärung ein",
+  "formText2": "Beim Senden dieser Form willige ich in die Bearbeitung meiner personenbezogenen Daten im Einklang",
+  "formPrivacy": "mit der Datenschutzerklärung ein",
   "formSubmit": "Dokumente für die Berechnung der Kosten senden",
   "clientsTitle": "Unsere Kunden",
   "aboutTitle": "Über uns",
@@ -157,7 +157,7 @@
   "logoImage": "./assets/images/logo-en.svg",
   "languageFlag": "flag-rus.png",
   "languageTitle": "Übersetzungsbüro Libete",
-  "languageMeta": "Übersetzungsbüro Libete Либете предлагает недорогие и срочные услуги переводческого агентства онлайн в Москве с различных языков, а также ознакомиться с расценками и отзывами о центре и бюро переводов",
+  "languageMeta": "Übersetzungsbüro Libete Günstige und dringende Dienstleistungen der übersetzungsagentur Online in Moskau aus verschiedenen Sprachen, sich mit den Preisen und den Rezensionen über das Zentrum und das übersetzungsbüro bekannt zu machen",
   "cookie": {
     "message": "Using the site libete.ru, I give my consent to the processing of my personal data.",
     "dismiss": "Got it!",
