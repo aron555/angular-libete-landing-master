@@ -53,9 +53,10 @@
                         <mat-accordion>
 
                             <mat-expansion-panel
-                                    (opened)="expandedRemove(0); expandedOpen(0)"
+                                    (opened)="expandedRemove(0); expandedOpen(0); "
                                     (closed)="expandedStart(0); expandedClose()"
                                     (afterCollapse)="expandedStop(0)"
+                                    [expanded]="0"
                                     class="panel">
                                 <mat-expansion-panel-header class="panel-header">
                                     <h3 class="panel-title">{{'mainTranslations.0.title' | translate}}</h3>
