@@ -224,49 +224,6 @@ body .comagic-widget {
   @include orangeButton();
 }
 
-.second-screen {
-  .screen-content {
-    padding-top: 80px;
-  }
-
-  &-blob {
-    @include blob(416px, 416px);
-    top: -166px;
-    left: -150px;
-  }
-}
-
-.flags {
-  @include width100HeightContent();
-  @include flexRowWrapContentStartItemsStart();
-  padding-top: 67px;
-
-  @media screen and (max-width: 768px) {
-    @include flexRowWrapContentCenterItemsCenter();
-  }
-}
-
-.flag {
-  margin-top: 32px;
-  width: 25%;
-  min-width: 200px;
-  @media screen and (max-width: 768px) {
-    min-width: 120px;
-    margin: 10px;
-  }
-
-  &-image {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-  }
-
-  &-text {
-    @include textPromo();
-    margin-top: 8px;
-  }
-}
-
 .third-screen {
   .screen-content {
     padding-top: 200px;

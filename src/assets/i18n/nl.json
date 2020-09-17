@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "Vertaalopdracht plaatsen",
-  "flagsTitle": "We werken met de talen van de GOS-landen en de Baltische staten:",
-  "flags": {
-    "0": {
-      "text": "Russisch"
-    },
-    "1": {
-      "text": "Oekraïens"
-    },
-    "2": {
-      "text": "Wit-Russisch"
-    },
-    "3": {
-      "text": "Kazachs"
-    },
-    "4": {
-      "text": "Azerbeidzjaans"
-    },
-    "5": {
-      "text": "Armeens"
-    },
-    "6": {
-      "text": "Georgisch"
-    },
-    "7": {
-      "text": "Moldavisch"
-    },
-    "8": {
-      "text": "Kirgizisch"
-    },
-    "9": {
-      "text": "Tadzjieks"
-    },
-    "10": {
-      "text": "Turkmeens"
-    },
-    "11": {
-      "text": "Oezbeeks"
-    },
-    "12": {
-      "text": "Lets"
-    },
-    "13": {
-      "text": "Litouws"
-    },
-    "14": {
-      "text": "Ests"
-    }
-  },
   "testTitle": "We maken gratis een proefvertaling",
   "testText1": "Beoordeel de kwaliteit en de snelheid van ons werk!        ",
   "testText2": "We bieden u een paar proefvertalingen gemaakt door onze vertalers, zodat u daaruit het beste kunt kiezen.",

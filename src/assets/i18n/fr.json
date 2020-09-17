@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "Commander la traduction",
-  "flagsTitle": "Nous travaillons avec les langues des pays de la CEI et baltes :",
-  "flags": {
-    "0": {
-      "text": "Russe"
-    },
-    "1": {
-      "text": "Ukrainien"
-    },
-    "2": {
-      "text": "Biélorusse"
-    },
-    "3": {
-      "text": "Kazakh"
-    },
-    "4": {
-      "text": "Azéri"
-    },
-    "5": {
-      "text": "Arménien"
-    },
-    "6": {
-      "text": "Géorgien"
-    },
-    "7": {
-      "text": "Moldave"
-    },
-    "8": {
-      "text": "Kirghiz"
-    },
-    "9": {
-      "text": "Tadjik"
-    },
-    "10": {
-      "text": "Turkmène"
-    },
-    "11": {
-      "text": "Ouzbek"
-    },
-    "12": {
-      "text": "Letton"
-    },
-    "13": {
-      "text": "Lituanien"
-    },
-    "14": {
-      "text": "Estonien"
-    }
-  },
   "testTitle": "Nous faisons une traduction-test gratuite",
   "testText1": "Évaluez la qualité et la rapidité de notre travail !",
   "testText2": "Nous vous proposerons plusieurs variantes de travaux de nos traducteurs, et vous pourrez choisir celui dont le style de présentation est le plus convenable pour vous.",

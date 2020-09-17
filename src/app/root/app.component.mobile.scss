@@ -133,32 +133,6 @@
     @include orangeButtonMobile();
   }
 
-  .second-screen {
-    .screen-content {
-      padding-top: 80px;
-    }
-
-    &-blob {
-      @include blob(312px, 312px);
-      top: -88px;
-      left: -106px;
-    }
-  }
-
-  .flags {
-    padding-top: 13px;
-  }
-
-  .flag {
-    margin-top: 25px;
-    min-width: 160px;
-
-    &-text {
-      @include textPromoMobile();
-      margin-top: 5px;
-    }
-  }
-
   .third-screen {
     &-blob {
       @include blob(320px, 352px);

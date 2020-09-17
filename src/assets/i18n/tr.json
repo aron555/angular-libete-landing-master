@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "Sipariş Ver",
-  "flagsTitle": "BDT ve Baltık dillerinde de çeviri yapıyoruz",
-  "flags": {
-    "0": {
-      "text": "Rusça"
-    },
-    "1": {
-      "text": "Ukraynaca"
-    },
-    "2": {
-      "text": "Belarusça"
-    },
-    "3": {
-      "text": "Kazakça"
-    },
-    "4": {
-      "text": "Azerbaycanca"
-    },
-    "5": {
-      "text": "Ermenice"
-    },
-    "6": {
-      "text": "Gürcüce"
-    },
-    "7": {
-      "text": "Moldovaca"
-    },
-    "8": {
-      "text": "Kırgızca"
-    },
-    "9": {
-      "text": "Tacikçe"
-    },
-    "10": {
-      "text": "Türkmence"
-    },
-    "11": {
-      "text": "Özbekçe"
-    },
-    "12": {
-      "text": "Letonyaca"
-    },
-    "13": {
-      "text": "Litvanyaca"
-    },
-    "14": {
-      "text": "Estonca"
-    }
-  },
   "testTitle": "Test çevirileriniz ücretsiz.",
   "testText1": "Kalitemizi ve hızımızı değerlendirin!",
   "testText2": "Birkaç farklı çevirmenimiz, çevrilmesini istediğiniz metni çevirdikten sonra üslubu iş amacınıza daha uygun çeviriyi siz seçersiniz. ",

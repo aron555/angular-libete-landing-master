@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "  Solicitar traducción",
-  "flagsTitle": "Trabajamos con los idiomas de los países de la CEI y los estados bálticos:",
-  "flags": {
-    "0": {
-      "text": "ruso"
-    },
-    "1": {
-      "text": "ucraniano"
-    },
-    "2": {
-      "text": "bielorruso"
-    },
-    "3": {
-      "text": "kazajo"
-    },
-    "4": {
-      "text": "azerí"
-    },
-    "5": {
-      "text": "armenio"
-    },
-    "6": {
-      "text": "georgiano"
-    },
-    "7": {
-      "text": "moldavo"
-    },
-    "8": {
-      "text": "kirguís"
-    },
-    "9": {
-      "text": "tayiko"
-    },
-    "10": {
-      "text": "turcomano"
-    },
-    "11": {
-      "text": "uzbeko"
-    },
-    "12": {
-      "text": "letón"
-    },
-    "13": {
-      "text": "lituano"
-    },
-    "14": {
-      "text": "estonio"
-    }
-  },
   "testTitle": "Realizamos pruebas de traducción de forma gratuita",
   "testText1": "¡Califique la calidad y la velocidad de nuestro trabajo!",
   "testText2": "Le daremos varios ejemplos de trabajos de nuestros traductores, y usted puede elegir el que tenga el estilo de redacción más cercano a usted.",

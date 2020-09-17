@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "Order Translation",
-  "flagsTitle": "CIS and Baltic states languages we translate:",
-  "flags": {
-    "0": {
-      "text": "Russian"
-    },
-    "1": {
-      "text": "Ukrainian"
-    },
-    "2": {
-      "text": "Belarusian"
-    },
-    "3": {
-      "text": "Kazakh"
-    },
-    "4": {
-      "text": "Azerbaijani"
-    },
-    "5": {
-      "text": "Armenian"
-    },
-    "6": {
-      "text": "Georgian"
-    },
-    "7": {
-      "text": "Moldavian"
-    },
-    "8": {
-      "text": "Kyrgyz"
-    },
-    "9": {
-      "text": "Tadjik"
-    },
-    "10": {
-      "text": "Turkmen"
-    },
-    "11": {
-      "text": "Uzbek"
-    },
-    "12": {
-      "text": "Latvian"
-    },
-    "13": {
-      "text": "Lithuanian"
-    },
-    "14": {
-      "text": "Estonian"
-    }
-  },
   "testTitle": "Free test translation",
   "testText1": "Assess our swiftness and quality!",
   "testText2": "We will provide you several test translations made by different translators so you can choose the one that you like most.",

@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "Ordina una traduzione",
-  "flagsTitle": "Lavoriamo con le lingue dei paesi della CSI e degli Stati baltici:",
-  "flags": {
-    "0": {
-      "text": "Russo "
-    },
-    "1": {
-      "text": "Ucraino"
-    },
-    "2": {
-      "text": "Bielorusso"
-    },
-    "3": {
-      "text": "Kazako"
-    },
-    "4": {
-      "text": "Azero"
-    },
-    "5": {
-      "text": "Armeno"
-    },
-    "6": {
-      "text": "Georgiano"
-    },
-    "7": {
-      "text": "Moldavo"
-    },
-    "8": {
-      "text": "Kirghiso"
-    },
-    "9": {
-      "text": "Tajik"
-    },
-    "10": {
-      "text": "Turkmeno"
-    },
-    "11": {
-      "text": "Uzbeko"
-    },
-    "12": {
-      "text": "Lettone"
-    },
-    "13": {
-      "text": "Lituano"
-    },
-    "14": {
-      "text": "Estone"
-    }
-  },
   "testTitle": "Effettuiamo gratuitamente una traduzione di prova",
   "testText1": "Valuta la qualità e la velocità del nostro lavoro!",
   "testText2": "Ti offriremo diverse opzioni per il lavoro dei nostri traduttori e potrai scegliere quello il cui stile di presentazione è più vicino a te.",

@@ -46,54 +46,6 @@
     }
   },
   "mainTranslationButton": "  Zamów tłumaczenie",
-  "flagsTitle": "Tłumaczymy na języki krajów WNP i krajów bałtyckich:",
-  "flags": {
-    "0": {
-      "text": "Rosyjski"
-    },
-    "1": {
-      "text": "Ukraiński"
-    },
-    "2": {
-      "text": "Białoruski"
-    },
-    "3": {
-      "text": "Kazachski"
-    },
-    "4": {
-      "text": "Azerbejdżański"
-    },
-    "5": {
-      "text": "Ormiański"
-    },
-    "6": {
-      "text": "Gruziński"
-    },
-    "7": {
-      "text": "Mołdawski"
-    },
-    "8": {
-      "text": "Kirgiski"
-    },
-    "9": {
-      "text": "Tadżycki"
-    },
-    "10": {
-      "text": "Turkmeński"
-    },
-    "11": {
-      "text": "Uzbecki"
-    },
-    "12": {
-      "text": "Łotewski"
-    },
-    "13": {
-      "text": "Litewski"
-    },
-    "14": {
-      "text": "Estoński"
-    }
-  },
   "testTitle": "Możemy wykonać darmowe tłumaczenie próbne",
   "testText1": "Oceń jakość i szybkość naszej pracy!",
   "testText2": "Przedstawimy Ci kilka wersji tłumaczeń wykonanych przez naszych tłumaczy, a będziesz mógł wybrać, tego, którego styl będzie dla Ciebie najbardziej odpowiedni.",

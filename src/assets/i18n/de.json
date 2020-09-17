@@ -47,53 +47,6 @@
   },
   "mainTranslationButton": "Übersetzung bestellen",
   "flagsTitle": "Wir arbeiten mit den Sprachen der Länder der GUS und des Baltikums:",
-  "flags": {
-    "0": {
-      "text": "Russisch"
-    },
-    "1": {
-      "text": "Ukrainisch"
-    },
-    "2": {
-      "text": "Weißrussisch"
-    },
-    "3": {
-      "text": "Kasachisch"
-    },
-    "4": {
-      "text": "Aserbaidschanisch"
-    },
-    "5": {
-      "text": "Armenisch"
-    },
-    "6": {
-      "text": "Georgisch"
-    },
-    "7": {
-      "text": "Moldauisch"
-    },
-    "8": {
-      "text": "Kirgisisch"
-    },
-    "9": {
-      "text": "Tadschikisch"
-    },
-    "10": {
-      "text": "Turkmenisch"
-    },
-    "11": {
-      "text": "Usbekisch"
-    },
-    "12": {
-      "text": "Lettisch"
-    },
-    "13": {
-      "text": "Litauisch"
-    },
-    "14": {
-      "text": "Estländisch"
-    }
-  },
   "testTitle": "Wir führen gratis eine Testübersetzung durch",
   "testText1": "Lernen Sie die Qualität und Geschwindigkeit unserer Arbeit zu schätzen!",
   "testText2": "Wir werden Ihnen einige Optionen der Arbeiten unserer Übersetzer vorführen, und Sie werden denjenigen auswählen können, der Stil von dem Ihnen am nächsten liegt.",
