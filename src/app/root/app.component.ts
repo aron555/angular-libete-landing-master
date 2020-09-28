@@ -87,7 +87,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         @Inject(PLATFORM_ID) private platformId: object,
         private translate: TranslateService,
         private ccService: NgcCookieConsentService,
-        private translateService: TranslateService
+        public el: ElementRef
     ) {
         this.initFormGroup();
         translate.setDefaultLang('en');
@@ -114,6 +114,9 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
             translate.get('languageMeta').subscribe((res: string) => {
                 metaTagService.updateTag({name: 'description', content: res});
             });
+            const lang = document.createAttribute('lang');
+            lang.value = this.translate.currentLang;
+            this.el.nativeElement.parentElement.parentElement.parentElement.attributes.setNamedItem(lang);
             this.configureCookieConsent();
         });
     }
@@ -164,7 +167,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     configureCookieConsent() {
-        this.translateService
+        this.translate
             .get(['cookie.header', 'cookie.message', 'cookie.dismiss', 'cookie.allow', 'cookie.deny', 'cookie.link', 'cookie.policy', 'cookie.policyLink', 'cookie.policyHref'])
             .subscribe(data => {
                 // console.log(data);
