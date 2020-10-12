@@ -1,9 +1,5 @@
 @import "../../assets/style-guides/index";
 
-body .comagic-widget {
-  display: none !important;
-}
-
 :host {
   @include widthHeight100();
   display: block;
