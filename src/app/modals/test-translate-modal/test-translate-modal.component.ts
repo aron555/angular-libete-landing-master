@@ -86,5 +86,8 @@ enum LANGUAGE {
     ES = 'ES',
     NL = 'NL',
     PL = 'PL',
-    TR = 'TR'
+    TR = 'TR',
+    JA = 'JA',
+    KO = 'KO',
+    ZH = 'ZH'
 }

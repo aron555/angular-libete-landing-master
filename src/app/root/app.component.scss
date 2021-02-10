@@ -107,6 +107,32 @@
   }
 }
 
+.header {
+  .lang {
+    width: 60px;
+  }
+
+  .lang-container {
+    width: 76px;
+    display: block;
+
+    .lang-item-image {
+      border: 1px solid #0000001f;
+    }
+
+    a:first-child {
+      display: block;
+
+    }
+
+    a:not(:first-child) {
+      display: inline-block;
+      margin-right: 5px;
+
+    }
+  }
+}
+
 .panel {
   width: fit-content;
   margin-bottom: 32px;

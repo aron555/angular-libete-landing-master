@@ -56,6 +56,16 @@
     }
   }
 
+  @media screen and (max-width: 374px) {
+    .header-row {
+      float: right;
+    }
+    .messenger-icon {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
   .panel {
     width: fit-content;
     margin-bottom: 35px;
