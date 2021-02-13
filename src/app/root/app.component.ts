@@ -354,9 +354,9 @@ enum LANGUAGE {
     NL = 'NL',
     PL = 'PL',
     TR = 'TR',
-    JA = 'JA',
+    ZH = 'ZH',
     KO = 'KO',
-    ZH = 'ZH'
+    JA = 'JA',
 }
 
 enum LANGUAGE_FLAGS {
@@ -369,7 +369,7 @@ enum LANGUAGE_FLAGS {
     NL = 'flag-nl.png',
     PL = 'flag-pl.svg',
     TR = 'flag-tr.png',
-    JA = 'flag-ja.svg',
+    ZH = 'flag-zh.svg',
     KO = 'flag-ko.svg',
-    ZH = 'flag-zh.svg'
+    JA = 'flag-ja.svg',
 }
